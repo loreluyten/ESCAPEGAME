@@ -1,0 +1,605 @@
+
+:root {
+    --background: #07111f;
+    --panel: #101d30;
+    --panel-light: #192b42;
+    --text: #edf6ff;
+    --muted: #9eafc4;
+    --accent: #55d6be;
+    --blue: #6ea8fe;
+    --danger: #ff6678;
+    --gold: #ffd166;
+    --border: #29415e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #142b49, var(--background) 65%);
+    color: var(--text);
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button, input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 22px 0;
+}
+
+.logo {
+    font-weight: 900;
+    letter-spacing: .07em;
+}
+
+.version {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 7px 12px;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.hero {
+    padding: 55px 0 40px;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 7vw, 5.2rem);
+    line-height: .98;
+    margin: 16px 0;
+}
+
+.hero p, .lab-introduction p {
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card, .inventory-panel, .codes-panel, .actions-panel,
+.navigation-panel, .review-item {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: linear-gradient(145deg, var(--panel), #0b1728);
+}
+
+.card {
+    padding: 24px;
+}
+
+.card p {
+    color: var(--muted);
+    line-height: 1.6;
+    min-height: 48px;
+}
+
+.big-icon {
+    font-size: 2.5rem;
+}
+
+.button {
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: var(--accent);
+    color: #062019;
+    font-weight: 800;
+    transition: transform .15s, filter .15s;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.07);
+}
+
+.button.secondary {
+    background: var(--panel-light);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.button.danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+.screen {
+    padding: 25px 0 70px;
+}
+
+.back {
+    border: 0;
+    background: none;
+    color: var(--muted);
+    padding: 10px 0;
+    margin-bottom: 18px;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.levels {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.choice {
+    text-align: left;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    background: var(--panel);
+    padding: 22px;
+    transition: .2s;
+}
+
+.choice:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.choice strong, .choice span {
+    display: block;
+}
+
+.choice strong {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.choice span {
+    color: var(--muted);
+}
+
+.game-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.game-header small {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted);
+}
+
+.timer {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
+}
+
+.timer.warning {
+    color: var(--danger);
+}
+
+.laboratory {
+    padding: 30px 0 55px;
+}
+
+.lab-introduction {
+    margin-bottom: 22px;
+}
+
+.lab-introduction h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 10px 0;
+}
+
+.room-layout {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    padding: 20px;
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    background:
+        linear-gradient(90deg, #ffffff08 1px, transparent 1px),
+        linear-gradient(#ffffff08 1px, transparent 1px),
+        #0b1728;
+    background-size: 32px 32px;
+    box-shadow: 0 20px 60px #0005;
+}
+
+.room-object {
+    min-width: 0;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    color: var(--text);
+    background: #101d30ed;
+    transition: .2s;
+}
+
+.room-object:hover {
+    border-color: var(--accent);
+    background: #192f47;
+    transform: translateY(-3px);
+}
+
+.room-object-icon {
+    font-size: 2.3rem;
+}
+
+.room-object-name {
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.object-status {
+    color: var(--accent);
+    font-size: .8rem;
+}
+
+.navigation-panel {
+    margin-top: 18px;
+    padding: 18px;
+}
+
+.navigation-panel h3 {
+    margin-top: 0;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.room-nav-button {
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--panel-light);
+    color: var(--text);
+}
+
+.room-nav-button.current {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.muted, .empty {
+    color: var(--muted);
+}
+
+.lab-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.inventory-panel, .codes-panel, .actions-panel {
+    padding: 17px;
+}
+
+.inventory-panel h3, .codes-panel h3 {
+    margin-top: 0;
+}
+
+.inventory-item, .code-item {
+    display: inline-block;
+    margin: 3px;
+    padding: 8px 10px;
+    border-radius: 9px;
+    background: var(--panel-light);
+    overflow-wrap: anywhere;
+}
+
+.code-item {
+    color: var(--gold);
+}
+
+.actions-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: #000b;
+    backdrop-filter: blur(7px);
+}
+
+.modal {
+    position: relative;
+    width: min(650px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: #0d1b2d;
+    box-shadow: 0 30px 100px #0009;
+}
+
+.modal h2 {
+    padding-right: 35px;
+    line-height: 1.4;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--panel-light);
+    color: var(--text);
+    font-size: 1.5rem;
+}
+
+.modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.answers {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.answer {
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--panel-light);
+    color: var(--text);
+    text-align: left;
+}
+
+.answer:hover:not(:disabled) {
+    border-color: var(--blue);
+}
+
+.answer:disabled {
+    cursor: default;
+    opacity: .95;
+}
+
+.answer.correct {
+    border-color: var(--accent);
+    background: #12352f;
+}
+
+.answer.wrong {
+    border-color: var(--danger);
+    background: #351923;
+}
+
+.feedback {
+    margin: 18px 0;
+    padding: 16px;
+    border-radius: 13px;
+    background: #0a1626;
+    line-height: 1.6;
+}
+
+.feedback.success {
+    border-left: 4px solid var(--accent);
+}
+
+.feedback.error {
+    border-left: 4px solid var(--danger);
+}
+
+.feedback.hint {
+    border-left: 4px solid var(--gold);
+}
+
+.discovered-code {
+    margin: 14px 0;
+    padding: 13px;
+    border-radius: 10px;
+    background: #18283d;
+    color: var(--gold);
+}
+
+.lock-box {
+    display: grid;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.lock-box label {
+    color: var(--muted);
+}
+
+.code-input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    background: var(--panel);
+    color: var(--text);
+}
+
+.locked-message {
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 13px;
+    background: #351923;
+    line-height: 1.6;
+}
+
+.unlock-animation {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.result {
+    padding: 40px 0 60px;
+    text-align: center;
+}
+
+.score {
+    margin: 20px;
+    color: var(--gold);
+    font-size: 4rem;
+    font-weight: 950;
+}
+
+.result-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.result-stats div {
+    min-width: 135px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--panel);
+}
+
+.result-stats strong, .result-stats span {
+    display: block;
+}
+
+.result-stats strong {
+    font-size: 1.5rem;
+}
+
+.result-stats span {
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.review {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.review-item {
+    margin: 12px 0;
+    padding: 17px;
+    line-height: 1.6;
+}
+
+.explanation {
+    color: var(--muted);
+}
+
+footer {
+    padding: 30px 0;
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+@media (max-width: 750px) {
+    .cards, .choices, .levels {
+        grid-template-columns: 1fr;
+    }
+
+    .room-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 12px;
+        gap: 9px;
+    }
+
+    .room-object {
+        min-height: 125px;
+        padding: 10px;
+    }
+
+    .room-object-icon {
+        font-size: 2rem;
+    }
+
+    .lab-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-panel {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding-top: 30px;
+    }
+
+    .modal {
+        padding: 22px;
+    }
+
+    .game-header {
+        align-items: flex-start;
+    }
+
+    .timer {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .room-layout {
+        grid-template-columns: 1fr;
+    }
+}
