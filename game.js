@@ -1,4 +1,4 @@
-const DEV_MODE = true; // true = mode test, false = jeu normal
+const DEV_MODE = false; // true = mode test, false = jeu normal
 // const app = document.getElementById("app");
 const TEST_MODE = true;
 const state = {
@@ -3478,25 +3478,160 @@ function getIncompleteObjectives() {
 
     return incomplete;
 }
+const CHIMIE_LEVEL_HINTS = {
+    1: "Atomistique et concentrations : vérifie protons/électrons/neutrons et convertis bien les volumes (mL → L) avant de calculer m = C × V × M.",
+    2: "Classification périodique : repère la ligne (période) et la colonne (électrons de valence) pour trouver Z ou le symbole.",
+    3: "Configuration électronique : suis l'ordre de remplissage (1s, 2s, 2p, 3s, 3p...) et respecte la capacité maximale de chaque sous-couche.",
+    4: "Hybridation et liaisons : compte les domaines électroniques autour de l'atome central (liaisons + doublets non-liants) pour identifier sp, sp² ou sp³.",
+    5: "Thermochimie et équilibres : applique la loi de Hess avec les bons signes et vérifie le sens/la spontanéité à la température donnée.",
+    6: "Cinétique et catalyse : analyse l'évolution des concentrations ou vitesses au cours du temps et utilise les propriétés de t₁/₂."
+};
+
+const MATHS_LEVEL_HINTS = {
+    1: "Équations et suites : isole l'inconnue pas à pas pour les équations, et repère la relation entre deux termes consécutifs pour les suites.",
+    2: "Fonctions, limites et dérivation : vérifie l'ensemble de définition, lève les formes indéterminées et applique les bonnes formules de dérivation.",
+    3: "Intégrales : détermine d'abord une primitive exacte avant de calculer F(b) − F(a) en faisant attention aux signes.",
+    4: "Équations différentielles : identifie le type d'équation linéaire du 1er ordre et applique la forme générale correspondante.",
+    5: "Géométrie et trigonométrie : appuie-toi sur les valeurs remarquables, le cercle trigonométrique et les relations géométriques de l'énoncé."
+};
+
+function getRoomRemainingObjects(roomKey, room) {
+    if (!room || !room.objects) return [];
+
+    const ignoredTypes = ["clue"];
+
+    return Object.entries(room.objects)
+        .filter(([objName, obj]) => {
+            if (!obj || ignoredTypes.includes(obj.type)) return false;
+
+            const id = `${roomKey}:${objName}`;
+            if (state.completedObjectives?.includes(id) || state.usedLocks?.includes(id)) {
+                return false;
+            }
+
+            if (obj.type === "roomDoor" && obj.targetRoom && state.unlockedRooms?.includes(obj.targetRoom)) {
+                return false;
+            }
+
+            if (obj.type === "final" && state.finished) {
+                return false;
+            }
+
+            return true;
+        })
+        .map(([, obj]) => obj);
+}
+
+function getProgressHintForCurrentRoom() {
+    const roomKey = state.currentRoom;
+    const room = getCurrentRoom();
+    if (!room) return "Explore les éléments interactifs de la pièce.";
+
+    // Cas particulier détaillé pour le mode Boss
+    if (state.mode === "boss") {
+        if (roomKey === "entrance") {
+            if (!state.unlockedRooms.includes("lab")) {
+                return "Commence par le thermomètre (100 °C → kelvins avec 273) et le verrou à droite, fais le carnet, les points et les suites, additionne les trois nombres en lettres majuscules sur le terminal, puis ouvre la porte du laboratoire.";
+            }
+            return "La porte du laboratoire est ouverte : tu peux passer à la salle suivante via la navigation.";
+        }
+
+        if (roomKey === "lab") {
+            if (!hasItem("key")) {
+                return "Réunis les 3 codes du coffre central (couleurs des tubes de la salle 1, balance de précision après César + calcul de masse, et microscope après l'injecteur) pour obtenir la clé.";
+            }
+            if (!hasItem("badge")) {
+                return "Tu as la clé : ouvre la mallette pour récupérer le badge, et pense à relever les infos utiles pour la salle 3 (or et radar de classification).";
+            }
+            if (!state.unlockedRooms.includes("analysis")) {
+                return "Passe ton badge sur la porte de droite pour accéder à la chambre expérimentale finale.";
+            }
+            return "L'accès à la chambre expérimentale finale est déjà débloqué.";
+        }
+
+        if (roomKey === "analysis") {
+            const finalQcmCount = state.objectCorrectQuestions?.["analysis:finalQuestion"]?.length || 0;
+            if (finalQcmCount < 7) {
+                return `Résous les modules de la salle (direction avec la légende de la salle 2, molécule, thermochimie, tubes 235 + labyrinthe) et valide les 7 QCM du lecteur final (${finalQcmCount}/7 réussis).`;
+            }
+            return "Les 7 QCM sont validés : utilise le badge et le code final sur le sas de sortie.";
+        }
+    }
+
+    // Avancement dynamique pour tous les niveaux de Maths, Chimie et autres salles
+    const remaining = getRoomRemainingObjects(roomKey, room);
+
+    if (!remaining.length) {
+        const hasLockedDoor = Object.values(room.objects || {}).some(
+            obj => obj.type === "roomDoor" && obj.targetRoom && !state.unlockedRooms.includes(obj.targetRoom)
+        );
+        if (hasLockedDoor) {
+            return "Les énigmes de cette pièce sont avancées : vérifie les codes ou objets obtenus pour ouvrir la porte vers la pièce suivante.";
+        }
+        return "Tu as terminé l'essentiel dans cette pièce : vérifie les portes ou les autres pièces débloquées pour poursuivre.";
+    }
+
+    const nextObj = remaining[0];
+
+    if (nextObj.requiredItem && !hasItem(nextObj.requiredItem)) {
+        const neededLabel = nextObj.requiredItem === "key"
+            ? "la clé"
+            : nextObj.requiredItem === "badge"
+                ? "le badge"
+                : `l'objet requis (${nextObj.requiredItem})`;
+        return `Il te faut d'abord ${neededLabel} pour débloquer « ${nextObj.title} » (reste ${remaining.length} élément(s) actif(s) dans cette pièce).`;
+    }
+
+    if (nextObj.type === "roomDoor") {
+        return `Prochaine étape : déverrouille « ${nextObj.title} » à l'aide du code ou de l'objet obtenu dans la pièce.`;
+    }
+
+    if (nextObj.type === "final") {
+        return `Étape finale : complète les prérequis puis valide « ${nextObj.title} » pour t'échapper.`;
+    }
+
+    return `Observe les indices autour de toi et concentre-toi sur « ${nextObj.title} » (${remaining.length} élément(s) restant(s) dans cette pièce).`;
+}
 
 function showGlobalHint() {
     state.hints++;
 
-    let message;
+    const room = getCurrentRoom();
+    const roomTitle = room?.title || state.currentRoom || "Pièce actuelle";
+    const lvl = Number(state.level);
 
-    if (!state.discoveredCodes.length) {
-        message = "Examine un objet avec le symbole 🧠 et réponds correctement pour obtenir un code.";
-    } else if (!hasItem("key")) {
-        message = "Utilise l'un de tes codes sur le coffre 🔐.";
-    } else if (!hasItem("badge")) {
-        message = "La clé peut ouvrir le tiroir ou l'armoire. Cherche cet objet dans le laboratoire.";
-    } else if (!hasItem("computerUnlocked")) {
-        message = "Trouve le terminal 💻 et essaie le mot de passe indiqué dans les indices.";
+    let modeLabel = "";
+    let topicHint = "";
+
+    if (state.mode === "boss") {
+        modeLabel = "Épreuve Boss";
+        topicHint = "Combine les indices et codes récupérés d'une salle à l'autre.";
+    } else if (state.mode === "chimie") {
+        const chapName = CHAPTER_NAMES?.[lvl] ? ` — ${CHAPTER_NAMES[lvl]}` : "";
+        modeLabel = `Chimie • Chapitre ${lvl}${chapName}`;
+        topicHint = CHIMIE_LEVEL_HINTS[lvl] || "Applique les notions de chimie de ce chapitre.";
+    } else if (state.mode === "maths") {
+        const chapName = MATHS_CHAPTER_NAMES?.[lvl] ? ` — ${MATHS_CHAPTER_NAMES[lvl]}` : "";
+        modeLabel = `Mathématiques • Chapitre ${lvl}${chapName}`;
+        topicHint = MATHS_LEVEL_HINTS[lvl] || "Applique les méthodes de mathématiques de ce chapitre.";
     } else {
-        message = "Retourne dans les pièces déjà visitées et cherche une porte encore verrouillée.";
+        modeLabel = "Mission en cours";
+        topicHint = "Lis attentivement chaque énoncé et chaque indice.";
     }
 
-    showModal("💡 Indice", `<p>${message}</p>`);
+    const progressHint = getProgressHintForCurrentRoom();
+
+    const codesSummary = state.discoveredCodes?.length
+        ? `<p class="muted">Codes découverts : <strong>${state.discoveredCodes.join(", ")}</strong></p>`
+        : `<p class="muted">Aucun code découvert pour l'instant.</p>`;
+
+    showModal("💡 Indice", `
+        <p><strong>Partie :</strong> ${modeLabel}</p>
+        <p><strong>Pièce :</strong> ${roomTitle}</p>
+        <p><strong>Méthode :</strong> ${topicHint}</p>
+        <p><strong>Avancement :</strong> ${progressHint}</p>
+        ${codesSummary}
+    `);
 }
 function closeModal() {
     document.querySelectorAll(".modal-overlay").forEach(modal => modal.remove());
