@@ -2610,7 +2610,7 @@ function getCorrectAnswerIndexes(question) {
     });
 }
 
-function answerQuestion(selectedAnswers) {{
+function answerQuestion(selectedAnswers) {
     const question = state.currentQuestion;
     if (!question) return;
 
@@ -2627,7 +2627,6 @@ function answerQuestion(selectedAnswers) {{
             (state.questionMistakes[id] || 0) + 1;
 
         state.totalMistakes++;
-        const maxMistakes = getMaxMistakes();
         const counter = document.getElementById("mistake-counter");
         if (counter) {
             counter.innerHTML = `
@@ -2658,12 +2657,10 @@ function answerQuestion(selectedAnswers) {{
         finish("errors");
         return;
     }
-    }
 
     const object = state.currentObject;
     let progressMessage = "";
     let needsNextQuestion = false;
-    const isMultiQuestion = object && object.requiredCorrectAnswers > 1;
     const isBossMicroscope =
         state.mode === "boss" &&
         state.currentObjectName === "microscope";
@@ -2724,7 +2721,13 @@ function answerQuestion(selectedAnswers) {{
 
     const feedback = document.getElementById("question-feedback");
     if (!feedback) return;
-
+const selectedSet = new Set(selectedAnswers);
+document.querySelectorAll('input[name="question-answer"]').forEach(input => {
+    const idx = Number(input.value);
+    input.checked = selectedSet.has(idx);
+    input.disabled = true;
+    input.closest(".answer")?.classList.toggle("selected", selectedSet.has(idx));
+});
     const correctLabels = expected.map(index =>
         `${String.fromCharCode(65 + index)}. ${question.choices[index]}`
     );
@@ -2771,6 +2774,7 @@ function answerQuestion(selectedAnswers) {{
         </div>
     `;
 }
+
 function getMaxMistakes() {
     if (state.mode === "boss") return 30;
 
