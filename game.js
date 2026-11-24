@@ -1,6 +1,6 @@
 const DEV_MODE = false; // true = mode test, false = jeu normal
 // const app = document.getElementById("app");
-const TEST_MODE = true;
+const TEST_MODE = false;
 const state = {
     mode: null,
     mazePosition: { x: 0, y: 0 },
