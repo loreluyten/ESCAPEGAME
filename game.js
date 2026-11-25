@@ -252,7 +252,7 @@ function home() {
             <article class="card">
                 <div class="big-icon">👑</div>
                 <h2>Boss final</h2>
-                <p>La meilleure mission complète qui mélange les deux matières.</p>
+                <p>La meilleure mission complète de 45 minutes qui mélange les deux matières.</p>
                 <button class="button" onclick="startBoss()">Affronter le boss</button>
             </article>
         </section>
