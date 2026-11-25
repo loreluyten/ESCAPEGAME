@@ -230,8 +230,8 @@ function home() {
     page(`
         <section class="hero">
             <div class="eyebrow">RÉVISE • EXPLORE • ÉCHAPPE-TOI</div>
-            <h1>Ton cours.<br>Ton laboratoire.<br>Ton escape game.</h1>
-            <p>Explore des salles, résous des énigmes et utilise tes découvertes pour t'échapper.</p>
+            <h1>Ton cours<br><br>Ton escape game</h1>
+            <p>Découvre les salles, résous des énigmes et utilise tes découvertes pour t'échapper.</p>
         </section>
 
         <section class="cards">
