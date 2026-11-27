@@ -4729,7 +4729,7 @@ function buildBossScenario() {
         room1: {
             thermometerClue: {
                 title: "🌡️ Thermomètre mural",
-                description: "Un thermomètre affiche 100 °C. Une inscription précise : « Convertis cette température en kelvins en utilisant 273 comme approximation pour déverouiller l'interface digitale à droite de la salle »",
+                description: "Un thermomètre affiche 100 °C. Une inscription précise : « Convertis cette température en kelvins en utilisant 273 comme approximation pour déverrouiller l'interface digitale à droite de la salle »",
                 type: "clue"
             },
 
@@ -4936,7 +4936,7 @@ function buildBossScenario() {
 
             molSynth: {
                 title: "🧬 Module de géométrie moléculaire (en haut)",
-                description: "Entre le mot caché codé par l'affiche à gauche, puis règle la géométrie de l'eau (H₂O : hybridation sp³, 2 doublets non-liants) pour obtenir la première lettre pour déverouiller le lecteur de QCM.",
+                description: "Entre le mot caché codé par l'affiche à gauche, puis règle la géométrie de l'eau (H₂O : hybridation sp³, 2 doublets non-liants) pour obtenir la première lettre pour déverrouiller le lecteur de QCM.",
                 type: "molecule",
                 unlockCode: "INTEGRALE",
                 targetHyb: "sp3",
@@ -4953,7 +4953,7 @@ function buildBossScenario() {
             balanceClue2: {
                 title: " Grille",
                 type: "clue",
-                description : "Ce grille sera utile pour déverouiller le lecteur final de QCM",
+                description : "Ce grille sera utile pour déverrouiller le lecteur final de QCM",
                 image: "image/grille.png"
 
             },
