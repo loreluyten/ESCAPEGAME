@@ -1,5 +1,5 @@
 const MATHS_ROOM_VISUALS = {
-    10: {
+    15: {
         entrance: {
             background: "image/maths-X-entree.png",
             zones: {
@@ -32,7 +32,7 @@ const MATHS_ROOM_VISUALS = {
         }
     },
 
-    20: {
+    30: {
         entrance: {
             background: "image/maths-20-entree.png",
             zones: {
@@ -64,7 +64,7 @@ const MATHS_ROOM_VISUALS = {
         }
     },
 
-    30: {
+    45: {
         entrance: {
             background: "image/maths-30-entree.png",
             zones: {
@@ -109,7 +109,7 @@ function buildMathsScenario(level, duration) {
     // CHAPITRE 1 : ÉQUATIONS ET SUITES
     // =====================================================================
     1: {
-        10: {
+        15: {
             title: "Suites & Équations : Parcours Express",
             intro: "Lis le tableau d'affichage et valide le cahier pour obtenir le badge d'entrée au laboratoire.",
             room1: {
@@ -228,7 +228,7 @@ function buildMathsScenario(level, duration) {
             }
         },
 
-        20: {
+        30: {
             title: "Suites Récurrentes : Protocole Intermédiaire",
             intro: "Lis le tableau d'affichage, puis résous le cahier pour obtenir le code d'entrée au laboratoire.",
             room1: {
@@ -333,7 +333,7 @@ function buildMathsScenario(level, duration) {
             }
         },
 
-        30: {
+        45: {
             title: "Algèbre & Récurrence : Protocole Complet",
             intro: "Observe les indices du hall pour orienter la serrure directionnelle et déverrouiller le cahier de recherche.",
             room1: {
@@ -463,7 +463,7 @@ function buildMathsScenario(level, duration) {
     // CHAPITRE 2 : FONCTIONS USUELLES, LIMITES ET DÉRIVATION
     // =====================================================================
     2: {
-        10: {
+        15: {
             title: "Fonctions & Dérivation : Parcours Express",
             intro: "Lis le tableau d'affichage et valide le cahier pour entrer dans le laboratoire.",
             room1: {
@@ -596,7 +596,7 @@ function buildMathsScenario(level, duration) {
             }
         },
 
-        20: {
+        30: {
             title: "Tangentes & Limites : Protocole Intermédiaire",
             intro: "Lis le tableau d'affichage et résous le cahier pour obtenir le code d'entrée au laboratoire.",
             room1: {
@@ -701,7 +701,7 @@ function buildMathsScenario(level, duration) {
             }
         },
 
-        30: {
+        45: {
             title: "Analyse de Fonctions : Protocole Complet",
             intro: "Observe les indices du hall pour orienter la serrure directionnelle et déverrouiller le cahier.",
             room1: {
@@ -836,7 +836,7 @@ function buildMathsScenario(level, duration) {
     // CHAPITRE 3 : INTÉGRALES
     // =====================================================================
     3: {
-        10: {
+        15: {
             title: "Aires & Primitives : Parcours Express",
             intro: "Lis le tableau d'affichage et valide le cahier pour entrer dans le laboratoire.",
             room1: {
@@ -968,7 +968,7 @@ rewardCode: "7",
             }
         },
 
-        20: {
+        30: {
             title: "Intégrale Définie : Protocole Intermédiaire",
             intro: "Lis le tableau d'affichage et résous le cahier pour obtenir le code d'entrée au laboratoire.",
             room1: {
@@ -1073,7 +1073,7 @@ rewardCode: "7",
             }
         },
 
-        30: {
+        45: {
             title: "Méthodes d'Intégration : Protocole Complet",
             intro: "Observe les indices du hall pour orienter la serrure directionnelle et déverrouiller le cahier.",
             room1: {
@@ -1207,7 +1207,7 @@ rewardCode: "7",
     // CHAPITRE 4 : ÉQUATIONS DIFFÉRENTIELLES
     // =====================================================================
     4: {
-        10: {
+        15: {
             title: "Équations Différentielles : Parcours Express",
             intro: "Lis le tableau d'affichage et valide le cahier pour entrer dans le laboratoire.",
             room1: {
@@ -1341,7 +1341,7 @@ rewardCode: "3",
             }
         },
 
-        20: {
+        30: {
             title: "Second Membre : Protocole Intermédiaire",
             intro: "Lis le tableau d'affichage et résous le cahier pour obtenir le code d'entrée au laboratoire.",
             room1: {
@@ -1446,7 +1446,7 @@ rewardCode: "3",
             }
         },
 
-        30: {
+        45 : {
             title: "Modélisation Différentielle : Protocole Complet",
             intro: "Observe les indices du hall pour orienter la serrure directionnelle et déverrouiller le cahier.",
             room1: {
@@ -1581,7 +1581,7 @@ rewardCode: "3",
     // CHAPITRE 5 : GÉOMÉTRIE ET TRIGONOMÉTRIE
     // =====================================================================
     5: {
-        10: {
+        15: {
             title: "Trigonométrie & Angles : Parcours Express",
             intro: "Lis le tableau d'affichage et valide le cahier pour entrer dans le laboratoire.",
             room1: {
@@ -1717,7 +1717,7 @@ rewardCode: "8",
             }
         },
 
-        20: {
+        30: {
             title: "Produit Scalaire & Repères : Protocole Intermédiaire",
             intro: "Lis le tableau d'affichage et résous le cahier pour obtenir le code d'entrée au laboratoire.",
             room1: {
@@ -1822,7 +1822,7 @@ rewardCode: "8",
             }
         },
 
-        30: {
+        45 : {
             title: "Géométrie & Trigonométrie : Protocole Complet",
             intro: "Observe les indices du hall pour orienter la serrure directionnelle et déverrouiller le cahier.",
             room1: {
@@ -2050,16 +2050,16 @@ console.log("Image salle finale :", rooms.analysis.background);
 
 const LEVEL_DURATIONS_MINUTES = {
     maths: {
-        1: 10,
+        1: 15,
         2: 15,
-        3: 20,
-        4: 30
+        3: 30,
+        4: 45
     },
     chimie: {
-        1: 10,
+        1: 15,
         2: 15,
-        3: 20,
-        4: 30
+        3: 30,
+        4: 45
     },
     boss: {
         0: 30
@@ -2071,7 +2071,7 @@ function cloneRooms(rooms) {
 }
 
 const CHIMIE_BASE_VISUALS = {
-    10: {
+    15: {
         entrance: {
             background: "image/chimie-10-vestiaire.png",
             zones: {
@@ -2115,7 +2115,7 @@ const CHIMIE_BASE_VISUALS = {
             }
         }
     },
-    20: {
+    30: {
         entrance: {
             background: "image/chimie-20-vestiaire.png",
             zones: {
@@ -2161,7 +2161,7 @@ const CHIMIE_BASE_VISUALS = {
             }
         }
     },
-    30: {
+    45: {
         entrance: {
             background: "image/chimie-30-vestiaire.png",
             zones: {
@@ -2225,7 +2225,7 @@ function buildChimieScenario(level, duration) {
     // NIVEAU 1 : ATOMISTIQUE & CONCENTRATIONS
     // =========================================================================
     1: {
-        10: {
+        15: {
             title: "Alerte Contamination Isotopique",
             intro: "Étape 1 : fouille la salle de départ pour obtenir un badge et un code. Étape 2 : entre au labo et ouvre la salle de contrôle. Étape 3 : rassemble les codes de la dernière salle pour activer la machine puis la sortie.",
             room1: {
@@ -2330,7 +2330,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        20: {
+        30: {
             title: "Le Coffre du Professeur Curie",
             intro: "Étape 1 : observe le tableau blanc, associe les fiches et fais les épreuves de la salle 1. Étape 2 : utilise l'ordre des flacons sur le modèle atomique puis débloque l'ordinateur et l'armoire. Étape 3 : décode les images, réussis les épreuves de la salle 3 et ouvre la porte blindée.",
             room1: {
@@ -2475,7 +2475,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        30: {
+        45: {
             title: "Protocole Oméga : Le Réacteur Perdu",
             intro: "Étape 1 : décode les directions et les couleurs en salle 1 pour obtenir une clé et passer au labo. Étape 2 : utilise l'énigme des couleurs sur les panneaux de couleur, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne puzzle, poster, carnet, ordinateur et balance pour ouvrir la porte finale.",
             room1: {
@@ -2615,7 +2615,7 @@ function buildChimieScenario(level, duration) {
     // CHAPITRE 2 : CLASSIFICATION PÉRIODIQUE
     // =========================================================================
     2: {
-        10: {
+        15: {
             title: "Le Vol du Tableau de Mendeleïev",
             intro: "Étape 1 : repère l'élément sur l'écran et fais le QCM du dossier en salle 1. Étape 2 : utilise le code de l'écran sur la mallette, ouvre l'armoire et passe en salle d'analyse. Étape 3 : enchaîne étagère, carnet, QCM, balance et machine pour ouvrir la sortie.",
             room1: {
@@ -2731,7 +2731,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        20: {
+        30 : {
             title: "Les Archives Secrètes des Alcalins",
             intro: "Étape 1 : lis le tableau blanc, sélectionne l'alcalin sur les fiches et fais les QCM des tubes en salle 1. Étape 2 : trace le motif sur le modèle atomique, débloque l'ordinateur et l'armoire. Étape 3 : décode les images, mémorise la feuille 2, valide les épreuves et franchis la porte blindée.",
             room1: {
@@ -2864,7 +2864,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        30: {
+        45 : {
             title: "L'Héritage de Dmitri",
             intro: "Étape 1 : résous le cadenas directionnel, ouvre le meuble et fais les QCM du livre en salle 1. Étape 2 : utilise l'ordre des familles sur les panneaux de couleur, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne les 5 tubes, le poster, le carnet, l'ordinateur portable et la balance pour atteindre la porte finale.",
             room1: {
@@ -3006,7 +3006,7 @@ function buildChimieScenario(level, duration) {
     // CHAPITRE 3 : CONFIGURATION ÉLECTRONIQUE
     // =========================================================================
     3: {
-        10: {
+        15: {
             title: "Court-Circuit Quantique",
             intro: "Étape 1 : configure l'Azote sur l'écran et fais le QCM du dossier rouge en salle 1. Étape 2 : utilise le code de l'écran sur la mallette, ouvre l'armoire et passe en salle d'analyse. Étape 3 : enchaîne étagère, carnet, ordinateur, balance et machine pour ouvrir la sortie.",
             room1: {
@@ -3122,7 +3122,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        20: {
+        30: {
             title: "La Règle de Klechkowski",
             intro: "Étape 1 : lis le tableau blanc, configure le Magnésium sur les fiches et fais les QCM des tubes en salle 1. Étape 2 : trace le motif sur le modèle atomique, débloque l'ordinateur et l'armoire. Étape 3 : décode les images, mémorise la feuille 2, valide les épreuves et franchis la porte blindée.",
             room1: {
@@ -3253,7 +3253,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        30: {
+        45 : {
             title: "L'Énigme des Métaux de Transition",
             intro: "Étape 1 : décode le cadenas directionnel et l'ordre des sous-couches en salle 1 pour obtenir une clé et passer au labo. Étape 2 : allume les panneaux de couleur selon l'ordre s, p, d, f, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne les 5 tubes, le poster, le carnet, l'ordinateur portable et la balance pour ouvrir la porte finale.",
             room1: {
@@ -3393,7 +3393,7 @@ function buildChimieScenario(level, duration) {
     // CHAPITRE 4 : HYBRIDATION & LIAISONS CHIMIQUES
     // =========================================================================
     4: {
-        10: {
+        15: {
             title: "Synthèse du Polymère Instable",
             intro: "Étape 1 : règle le dossier rouge et fais le QCM de la caisse en salle 1. Étape 2 : utilise le code du dossier rouge sur la mallette, ouvre l'armoire et passe en salle d'analyse. Étape 3 : enchaîne étagère, carnet, cahier QCM, balance et machine pour ouvrir la sortie.",
             room1: {
@@ -3509,7 +3509,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        20: {
+        30: {
             title: "Le Mystère de la Double Liaison",
             intro: "Étape 1 : lis le tableau blanc, règle les fiches sur la table et fais les QCM des tubes en salle 1. Étape 2 : trace le motif sur le modèle atomique, débloque l'ordinateur et l'armoire. Étape 3 : décode les images, mémorise la feuille 2, valide les épreuves et franchis la porte blindée.",
             room1: {
@@ -3640,7 +3640,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        30: {
+        45: {
             title: "L'Architecte Moléculaire",
             intro: "Étape 1 : décode le cadenas directionnel et l'ordre des géométries VSEPR en salle 1 pour obtenir une clé et passer au labo. Étape 2 : active les panneaux de couleur de la géométrie la plus simple à la plus encombrée, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne les 5 tubes, le poster, le carnet, l'ordinateur portable et la balance pour ouvrir la porte finale.",
             room1: {
@@ -3780,7 +3780,7 @@ function buildChimieScenario(level, duration) {
     // CHAPITRE 5 : THERMOCHIMIE & ÉQUILIBRES THERMODYNAMIQUES
     // =========================================================================
     5: {
-        10: {
+        15: {
             title: "Surchauffe du Calorimètre",
             intro: "Étape 1 : règle le dossier rouge et fais le QCM de la caisse en salle 1. Étape 2 : utilise le code du dossier rouge sur la mallette, ouvre l'armoire et passe en salle d'analyse. Étape 3 : enchaîne étagère, carnet, cahier QCM, balance et machine pour ouvrir la sortie.",
             room1: {
@@ -3909,7 +3909,7 @@ function buildChimieScenario(level, duration) {
                 }
             }
         },
-        20: {
+        30: {
             title: "Le Cycle de Born-Haber",
             intro: "Étape 1 : lis le tableau blanc, règle les fiches sur la table et fais les QCM des tubes en salle 1. Étape 2 : trace le motif sur le modèle atomique, débloque l'ordinateur et l'armoire. Étape 3 : décode les images, mémorise la feuille 2, valide les épreuves et franchis la porte blindée.",
             room1: {
@@ -4058,7 +4058,7 @@ tableCards: {
                 }
             }
         },
-        30: {
+        45: {
             title: "Synthèse d'Ammoniac : Procédé Haber",
             intro: "Étape 1 : décode le cadenas directionnel et l'ordre des états thermodynamiques en salle 1 pour obtenir une clé et passer au labo. Étape 2 : active les panneaux de couleur du plus désordonné au plus ordonné, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne les 5 tubes, le poster, le carnet, l'ordinateur portable et la balance pour ouvrir la porte finale.",
             room1: {
@@ -4220,7 +4220,7 @@ notebook: {
     // CHAPITRE 6 : CINÉTIQUE CHIMIQUE & CATALYSE
     // =========================================================================
     6: {
-        10: {
+        15: {
             title: "Course Contre la Demi-Réaction",
             intro: "Étape 1 : règle le dossier rouge et fais le QCM de la caisse en salle 1. Étape 2 : utilise le code du dossier rouge sur la mallette, ouvre l'armoire et passe en salle d'analyse. Étape 3 : enchaîne étagère, carnet, balance et machine pour ouvrir la sortie.",
             room1: {
@@ -4329,7 +4329,7 @@ notebook: {
                 }
             }
         },
-        20: {
+        30: {
             title: "Sabotage Enzymatique",
             intro: "Étape 1 : lis le tableau blanc, règle les fiches sur la table et fais les QCM des tubes en salle 1. Étape 2 : trace le motif sur le modèle atomique, débloque l'ordinateur et l'armoire. Étape 3 : décode les images, mémorise la feuille 2, valide les épreuves et franchis la porte blindée.",
             room1: {
@@ -4461,7 +4461,7 @@ notebook: {
                 }
             }
         },
-        30: {
+        45: {
             title: "Le Réacteur d'Arrhenius",
             intro: "Étape 1 : décode le cadenas directionnel et l'ordre des grandeurs cinétiques en salle 1 pour obtenir une clé et passer au labo. Étape 2 : active les panneaux de couleur selon l'ordre chronologique puis énergétique, ouvre le coffret et l'armoire pour le badge. Étape 3 : enchaîne les 5 tubes, le poster, le carnet, l'ordinateur portable et la balance pour ouvrir la porte finale.",
             room1: {

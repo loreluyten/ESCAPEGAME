@@ -252,7 +252,7 @@ function home() {
             <article class="card">
                 <div class="big-icon">👑</div>
                 <h2>Boss final</h2>
-                <p>La meilleure mission complète de 45 minutes qui mélange les deux matières.</p>
+                <p>La meilleure mission complète de 1 heure qui mélange les deux matières.</p>
                 <button class="button" onclick="startBoss()">Affronter le boss</button>
             </article>
         </section>
@@ -269,10 +269,10 @@ function chooseDuration(mode) {
             <div class="eyebrow">${name}</div>
             <h1>Choisis ta durée</h1>
             <div class="choices">
-                ${[10, 20, 30].map(minutes => `
+                ${[15, 30, 45].map(minutes => `
                     <button class="choice" onclick="chooseLevel(${minutes})">
                         <strong>${minutes} minutes</strong>
-                        <span>${minutes === 10 ? "Mini-mission" : minutes === 20 ? "Mission complète" : "Grande exploration"}</span>
+                        <span>${minutes === 15 ? "Mini-mission" : minutes === 30 ? "Mission complète" : "Grande exploration"}</span>
                     </button>
                 `).join("")}
             </div>
@@ -336,7 +336,7 @@ function chooseLevel(duration) {
 
 function startBoss() {
     state.mode = "boss";
-    state.duration = 45;
+    state.duration = 60;
     startGame(0);
 }
 
@@ -2779,9 +2779,9 @@ function getMaxMistakes() {
     if (state.mode === "boss") return 30;
 
     const limitsByDuration = {
-        10: 8,
-        20: 10,
-        30: 20
+        15: 8,
+        30: 10,
+        45: 20
     };
 
     return limitsByDuration[Number(state.duration)] ?? 10;
