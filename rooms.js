@@ -4844,7 +4844,7 @@ function buildBossScenario() {
 
             mendeleievRadar: {
                 title: "🔍 Console radar de classification (au centre)",
-                description: "Entre le code à 3 chiffres déduit du registre des essais, puis sélectionne l'élément ayant pour caractéristique A=34 à l'état stable et neutre pour obtenir la seconde moitié de la légende directionnelle de la salle 3.",
+                description: "Entre le code à 3 chiffres déduit du registre des essais, puis sélectionne l'élément ayant 17 protons à l'état stable et neutre pour obtenir la seconde moitié de la légende directionnelle de la salle 3.",
                 type: "mendeleiev",
                 unlockCode: "042",
                 targetZ: 17,
@@ -4854,13 +4854,13 @@ function buildBossScenario() {
 
             caesarClue1: {
                 title: "📜 Feuille",
-                description: "Un mot est inscrit en gros sur la feuille, il est noté qu'il sera utile pour la balance de précision s'affiche sur l'écran : FKLIIUH.",
+                description: "Un mot est inscrit en gros sur la feuille, il est noté qu'il sera utile pour la balance de précision, il s'affiche sur l'écran : FKLIIUH.",
                 type: "clue"
             },
 
             caesarClue2: {
                 title: "📜 Inscriptions gravés sur le sol",
-                description: "Une inscription précise : « Le scientifique fou décalait toujours ses mots de passe de trois rangs vers l'avant dans l'alphabet. »",
+                description: "Une inscription précise : « Pour se souvenir de son mot de passe, le scientifique fou le notait en le décalant de trois rangs vers l'arrière dans l'alphabet (de A vers Z). »",
                 type: "clue"
             },
 
@@ -4923,7 +4923,7 @@ function buildBossScenario() {
 
             alternatingClue1: {
                 title: "📄 Feuille codée en haut à gauche",
-                description: "Suite de lettres relevée pour le synthétiseur moléculaire : IPNATOELGSRXALIE.",
+                description: "Suite de lettres relevée pour le synthétiseur moléculaire : IPNATOELGSRXAFLIE.",
                 type: "clue"
             },
 
@@ -4953,7 +4953,7 @@ function buildBossScenario() {
             balanceClue2: {
                 title: " Grille",
                 type: "clue",
-                description : "Ce grille sera utile pour déverrouiller le lecteur final de QCM",
+                description : "Cette grille sera utile pour déverrouiller le lecteur final de QCM",
                 image: "image/grille.png"
 
             },
@@ -4961,7 +4961,7 @@ function buildBossScenario() {
             thermoRegulator: {
                 title: "🌡️ Capteur et régulateur thermique (en bas)",
                 description: `
-        <strong>Entre la masse d'une éprouvette déduite des balances, puis règle la combustion du méthane pour avoir la deuxième lettre à enter sur le lecteur de QCM: </strong><br><br>
+        <strong>Entre la masse d'une éprouvette déduite des balances, puis règle la combustion du méthane pour avoir la deuxième lettre à entrer sur le lecteur de QCM: </strong><br><br>
 
         Équation :
         CH₄(g) + 2 O₂(g) → CO₂(g) + 2 H₂O(l)<br><br>
