@@ -4743,7 +4743,7 @@ function buildBossScenario() {
 
             journal: {
                 title: "📖 Carnet posé en bas à gauche",
-                description: "Saisis le code obtenu sur la porte cadenassée du sas, puis réussis 3 QCM d'initialisation pour obtenir le 1er code chiffré destiné au terminal central.",
+                description: "Saisis le code obtenu sur l'interface digitale, puis réussis 3 QCM d'initialisation pour obtenir le 1er code chiffré destiné au terminal central.",
                 type: "question",
                 requiredCode: "SAS",
                 requiredCorrectAnswers: 3,
