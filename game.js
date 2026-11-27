@@ -272,7 +272,7 @@ function chooseDuration(mode) {
                 ${[15, 30, 45].map(minutes => `
                     <button class="choice" onclick="chooseLevel(${minutes})">
                         <strong>${minutes} minutes</strong>
-                        <span>${minutes === 15 ? "Mini-mission" : minutes === 30 ? "Mission complète" : "Grande exploration"}</span>
+                        <span>${minutes === 15 ? "Mini-mission" : minutes === 30 ? "Mission classique" : "Grande exploration"}</span>
                     </button>
                 `).join("")}
             </div>
