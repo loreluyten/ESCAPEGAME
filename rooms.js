@@ -4941,7 +4941,7 @@ function buildBossScenario() {
                 unlockCode: "INTEGRALE",
                 targetHyb: "sp3",
                 targetDnl: 2,
-                rewardCode: "☢1"
+                rewardCode: "1=☢1"
             },
 
             balanceClue1: {
@@ -4981,7 +4981,7 @@ function buildBossScenario() {
                 unlockCode: "4",
                 targetDh: -891,
                 targetSpont: "oui",
-                rewardCode: "♥5"
+                rewardCode: "2=♥5"
             },
 
             tubesImgClue1: {
@@ -5003,7 +5003,7 @@ function buildBossScenario() {
                 description: "Entre le code à 3 chiffres formé par les numéros des tubes qui ont évolué, puis traverse le labyrinthe sans toucher les parois laser pour obtenir la 3ème lettre de l'épreuve ultime.",
                 type: "mazeGame",
                 requiredCode: "235",
-                rewardCode: "♥1"
+                rewardCode: "3=♥1"
             },
 
             finalQuestion: {
