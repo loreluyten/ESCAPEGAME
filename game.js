@@ -366,6 +366,7 @@ state.currentObjectRoom = null;
 state.mazePosition = { x: 0, y: 0 };
 state.mazeCompleted = false;
 state.completedObjectives = [];
+state.unlockedQuestionAccess = [];
     state.currentQuestion = null;
     state.remaining = state.duration * 60;
     state.inventory = [];
@@ -2443,7 +2444,11 @@ function launchQuestion(object, retry = false) {
     `);
 }
 function openQuestion(object, retry = false) {
-    if (object.requiredCode && !retry) {
+    const accessKey = `${state.currentObjectRoom || state.currentRoom}:${state.currentObjectName}`;
+    const alreadyUnlocked = Array.isArray(state.unlockedQuestionAccess) &&
+        state.unlockedQuestionAccess.includes(accessKey);
+
+    if (object.requiredCode && !retry && !alreadyUnlocked) {
         state.pendingQuestion = object;
 
         showModal(object.title || "Énigme", `
@@ -2483,9 +2488,16 @@ function unlockQuestion() {
     const required = String(object.requiredCode || "").trim().toUpperCase();
 
     if (entered === required) {
+        const accessKey = `${state.currentObjectRoom || state.currentRoom}:${state.currentObjectName}`;
+        if (!state.unlockedQuestionAccess) {
+            state.unlockedQuestionAccess = [];
+        }
+        if (!state.unlockedQuestionAccess.includes(accessKey)) {
+            state.unlockedQuestionAccess.push(accessKey);
+        }
+
         markCodesUsed(entered);
-state.pendingQuestion = null;
-renderLaboratory();
+        state.pendingQuestion = null;
         launchQuestion(object);
     } else {
         feedback.innerHTML = `
