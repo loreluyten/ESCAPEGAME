@@ -3639,2026 +3639,4046 @@ const QUESTION_BANK = [
     "hint": "Convertis les températures en kelvins et applique la loi d’Arrhenius à deux températures.",
     "explanation": "Pour k₂/k₁ = 2, T₁ = 293,15 K et T₂ = 303,15 K, Eₐ = R ln(2)/(1/T₁ − 1/T₂) ≈ 51,2 kJ·mol⁻¹. Cette valeur ne figure pas dans les choix A à D : la réponse E est correcte."
   },
-  {
+   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "code": "equations-003",
+
     "text": "On considère le système d'équations linéaires suivant : 3x - 4y = 2 et -5x + 2y = -8. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Le système n'a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) Les deux droites associées sont sécantes.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Le système n'a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "Les deux droites associées sont sécantes.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "hint": "Calcule le déterminant du système : s'il est non nul, il existe une solution unique.",
+
     "explanation": "Le déterminant vaut 3 × 2 − (−5 × −4) = −14. Il est non nul : le système admet une solution unique et les deux droites sont sécantes."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "code": "suites-022",
+
     "text": "On considère une suite géométrique de premier terme u₁ = 2 et de raison 1,2. Quelle proposition donne la valeur entière la plus proche de u₂₀ ?",
+
     "choices": [
-      "A) u₂₀ ≈ 81",
-      "B) u₂₀ ≈ 77",
-      "C) u₂₀ ≈ 64",
-      "D) u₂₀ ≈ 72",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "u₂₀ ≈ 81",
+
+      "u₂₀ ≈ 77",
+
+      "u₂₀ ≈ 64",
+
+      "u₂₀ ≈ 72",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "hint": "Pour une suite géométrique de premier terme u₁, utilise uₙ = u₁ × qⁿ⁻¹.",
+
     "explanation": "u₂₀ = 2 × 1,2¹⁹ ≈ 63,9. La valeur entière la plus proche est 64."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "code": "suites-023",
+
     "text": "On considère une suite géométrique (vₙ) de premier terme v₀ = 5 et de raison 0,9. Parmi les propositions suivantes concernant v₂₀, laquelle est exacte ?",
+
     "choices": [
-      "A) v₂₀ ≈ 0,55",
-      "B) v₂₀ ≈ 0,61",
-      "C) v₂₀ ≈ 1,22",
-      "D) v₂₀ ≈ 0,002",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "v₂₀ ≈ 0,55",
+
+      "v₂₀ ≈ 0,61",
+
+      "v₂₀ ≈ 1,22",
+
+      "v₂₀ ≈ 0,002",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "hint": "Pour une suite géométrique de premier terme v₀, utilise vₙ = v₀ × qⁿ.",
+
     "explanation": "v₂₀ = 5 × 0,9²⁰ ≈ 0,61."
+
   },
+
   {
+
     "subject": "Suites",
+
     "level": 1,
+
     "code": "201",
+
     "text": "Une suite vérifie U₀ = 4 et Uₙ₊₁ = Uₙ + 3. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "La suite est arithmétique de raison 3",
+
       "La suite est géométrique de raison 3",
+
       "U₁₀ = 34",
+
       "U₁₀ = 30",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2
+
     ],
+
     "hint": "Une suite définie en ajoutant toujours le même nombre est arithmétique.",
+
     "explanation": "La raison vaut 3. Ainsi, Uₙ = 4 + 3n et U₁₀ = 4 + 30 = 34."
+
   },
+
   {
+
     "subject": "Suites",
+
     "level": 1,
+
     "code": "202",
+
     "text": "Une suite géométrique vérifie V₀ = 5 et Vₙ₊₁ = 2Vₙ. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "V₄ = 40",
+
       "V₄ = 80",
+
       "Vₙ = 5 × 2ⁿ",
+
       "V₄ = 5 + 4 × 2",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       1,
+
       2
+
     ],
+
     "hint": "Pour une suite géométrique, Vₙ = V₀ × qⁿ.",
+
     "explanation": "La raison est 2. Donc Vₙ = 5 × 2ⁿ et V₄ = 5 × 16 = 80."
+
   },
+
   {
+
     "subject": "Suites",
+
     "level": 1,
+
     "code": "203",
+
     "text": "Une suite vérifie U₀ = 2 et Uₙ₊₁ = Uₙ + 2n + 1. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "U₁ = 3",
+
       "U₂ = 6",
+
       "U₃ = 11",
+
       "La suite est arithmétique",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       2
+
     ],
+
     "hint": "Calcule successivement U₁, U₂ et U₃ en remplaçant n par 0, puis 1, puis 2.",
+
     "explanation": "U₁ = 3 ; U₂ = 6 ; U₃ = 11. Les différences ne sont pas constantes : la suite n'est pas arithmétique."
+
   },
+
   {
+
     "subject": "Suites",
+
     "level": 1,
+
     "code": "204",
+
     "text": "Une suite arithmétique vérifie U₀ = 7 et r = -2. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "U₁₀ = -13",
+
       "U₁₀ = -20",
+
       "La somme U₀ + U₁ + ... + U₁₀ vaut -33",
+
       "La somme U₀ + U₁ + ... + U₁₀ vaut -26",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2
+
     ],
+
     "hint": "Utilise Uₙ = U₀ + nr, puis la formule de somme des termes d'une suite arithmétique.",
+
     "explanation": "U₁₀ = 7 - 20 = -13. Il y a 11 termes, donc S = 11 × (7 - 13)/2 = -33."
+
   },
+
   {
+
     "subject": "Suites",
+
     "level": 1,
+
     "code": "205",
+
     "text": "Une suite géométrique vérifie W₁ = 12 et W₂ = 6. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "La raison est 2",
+
       "La raison est 1/2",
+
       "W₃ = 3",
+
       "W₄ = 1,5",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       1,
+
       2,
+
       3
+
     ],
+
     "hint": "La raison d'une suite géométrique est le quotient de deux termes consécutifs.",
+
     "explanation": "q = W₂/W₁ = 6/12 = 1/2. Donc W₃ = 3 et W₄ = 1,5."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-25",
+
     "text": "On considère u(x) = x e^(x² + 1) + ln(1 + sin²(x)). On calcule u'(x). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) u'(x) = (2x + 1)e^(x² + 1) + 1/(1 + sin²(x)).",
-      "B) u'(x) = (2x² + 1)e^(x² + 1) + 2 sin(x)cos(x)/(1 + sin²(x)).",
-      "C) u'(x) = e^(2x) + 2 sin(x)/(1 + sin²(x)).",
-      "D) u'(x) = e^(2x) + 2 cos(x)/(1 + sin²(x)).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u'(x) = (2x + 1)e^(x² + 1) + 1/(1 + sin²(x)).",
+
+      "u'(x) = (2x² + 1)e^(x² + 1) + 2 sin(x)cos(x)/(1 + sin²(x)).",
+
+      "u'(x) = e^(2x) + 2 sin(x)/(1 + sin²(x)).",
+
+      "u'(x) = e^(2x) + 2 cos(x)/(1 + sin²(x)).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "hint": "Utilise la règle du produit pour le premier terme et la dérivée de ln(v) pour le second.",
+
     "explanation": "La dérivée de x e^(x² + 1) est (2x² + 1)e^(x² + 1). La dérivée de ln(1 + sin²(x)) est 2 sin(x)cos(x)/(1 + sin²(x))."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-26",
+
     "text": "On considère g(x) = 3x³ + sin(2x) + 1/√x. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) g'(x) = 9x² - 2 cos(3x) + 2/(x√x).",
-      "C) g'(x) = 9x² + cos(2x) - 1/(x√x).",
-      "D) g'(x) = 9x² + 2 cos(2x) - 1/(2x√x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "g'(x) = 9x² - 2 cos(3x) + 2/(x√x).",
+
+      "g'(x) = 9x² + cos(2x) - 1/(x√x).",
+
+      "g'(x) = 9x² + 2 cos(2x) - 1/(2x√x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "hint": "Le terme 3x³ domine à l’infini. Pour le dernier terme, dérive x^(-1/2).",
+
     "explanation": "La limite vaut +∞. La dérivée est 9x² + 2cos(2x) - 1/(2x√x)."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-28",
+
     "text": "On considère h(x) = ln(x² + 1) + x/(x² + 1) + tan(x). On calcule h'(x).",
+
     "choices": [
-      "A) h'(x) = 1/(x² + 1) + (1 - x²)/(x² + 1)² + tan²(x).",
-      "B) h'(x) = (2x + 1)/(x² + 1) + (x² - 1)/(x² + 1)² + 1/cos²(x).",
-      "C) h'(x) = 2x/(x² + 1) + (1 - x²)/(x² + 1)² + tan²(x) + 1.",
-      "D) h'(x) = 2x/(x² + 1) + (x² - 1)/(x² + 1)² + tan²(x) + 1.",
-      "E) Aucune des réponses ci-dessus n’est exacte."
+
+      "h'(x) = 1/(x² + 1) + (1 - x²)/(x² + 1)² + tan²(x).",
+
+      "h'(x) = (2x + 1)/(x² + 1) + (x² - 1)/(x² + 1)² + 1/cos²(x).",
+
+      "h'(x) = 2x/(x² + 1) + (1 - x²)/(x² + 1)² + tan²(x) + 1.",
+
+      "h'(x) = 2x/(x² + 1) + (x² - 1)/(x² + 1)² + tan²(x) + 1.",
+
+      "Aucune des réponses ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "hint": "Dérive séparément le logarithme, le quotient et la tangente.",
+
     "explanation": "La dérivée est 2x/(x² + 1) + (1 - x²)/(x² + 1)² + 1/cos²(x). Comme 1/cos²(x) = tan²(x) + 1, la réponse C est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-29",
+
     "text": "On considère g(x) = x²e^(-2x). Parmi les propositions suivantes concernant g et g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = 0.",
-      "B) lim(x→+∞) g(x) = +∞.",
-      "C) g'(x) = 2x(1 - x)e^(-2x).",
-      "D) g'(x) = x(2 - x)e^(-2x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = 0.",
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "g'(x) = 2x(1 - x)e^(-2x).",
+
+      "g'(x) = x(2 - x)e^(-2x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "hint": "Réécris l’expression comme x²/e^(2x), puis dérive avec la règle du produit.",
+
     "explanation": "L’exponentielle croît plus vite que le polynôme, donc la limite vaut 0. La dérivée est 2xe^(-2x) - 2x²e^(-2x) = 2x(1 - x)e^(-2x)."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-30",
+
     "text": "On considère f(x) = e^(√x) + sin(x)/cos(x). On calcule f'(x).",
+
     "choices": [
-      "A) f'(x) = -e^(√x)/(2√x) + 1/sin²(x).",
-      "B) f'(x) = e^(√x)/(2√x) + 1/cos²(x).",
-      "C) f'(x) = -e^(√x)/(2√x) - cos(x)/sin(x).",
-      "D) f'(x) = e^(√x)/(2√x) + 1/cos²(x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "f'(x) = -e^(√x)/(2√x) + 1/sin²(x).",
+
+      "f'(x) = e^(√x)/(2√x) + 1/cos²(x).",
+
+      "f'(x) = -e^(√x)/(2√x) - cos(x)/sin(x).",
+
+      "f'(x) = e^(√x)/(2√x) + 1/cos²(x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "hint": "Utilise la dérivée d’une exponentielle composée et celle de tan(x) = sin(x)/cos(x).",
+
     "explanation": "La dérivée de e^(√x) est e^(√x)/(2√x). La dérivée de sin(x)/cos(x) est 1/cos²(x). Les réponses B et D sont identiques."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-31",
+
     "text": "On considère g(x) = e^(2x)/x - ln(2x). Parmi les propositions suivantes concernant g et g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = -∞.",
-      "B) lim(x→+∞) g(x) = +∞.",
-      "C) g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
-      "D) g'(x) = (2xe^(2x) - e^(2x))/x² - x ln(2x - 1).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
+
+      "g'(x) = (2xe^(2x) - e^(2x))/x² - x ln(2x - 1).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "hint": "L’exponentielle domine le logarithme. Pour la dérivée, applique la règle du quotient.",
+
     "explanation": "La limite est +∞. La dérivée correcte est 2e^(2x)/x - e^(2x)/x² - 1/x. La proposition C comporte une erreur sur le dernier terme."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-32",
+
     "text": "On considère f(x) = 1/√(2x) + ln(x)/x + sin²(2x + 3). On calcule f'(x).",
+
     "choices": [
-      "A) f'(x) = -1/(x√(2x)) + 4cos(2x + 3).",
-      "B) f'(x) = 1/(2x√(2x)) + (x - ln(x))/x² + 2cos(2x + 3)sin(2x + 3).",
-      "C) f'(x) = -1/(2x√(2x)) + (1 - ln(x))/x² + 4cos(2x + 3)sin(2x + 3).",
-      "D) f'(x) = 1/(2x) + (1 + ln(x))/x² + 2cos(2x + 3)sin(2x + 3).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "f'(x) = -1/(x√(2x)) + 4cos(2x + 3).",
+
+      "f'(x) = 1/(2x√(2x)) + (x - ln(x))/x² + 2cos(2x + 3)sin(2x + 3).",
+
+      "f'(x) = -1/(2x√(2x)) + (1 - ln(x))/x² + 4cos(2x + 3)sin(2x + 3).",
+
+      "f'(x) = 1/(2x) + (1 + ln(x))/x² + 2cos(2x + 3)sin(2x + 3).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "hint": "Dérive les trois termes séparément ; attention à la règle de la chaîne.",
+
     "explanation": "La dérivée vaut -1/(2x√(2x)) + (1 - ln(x))/x² + 4cos(2x + 3)sin(2x + 3)."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "code": "fonctions-33",
+
     "text": "On considère u(x) = x/(x² + 1) + ln(2 + cos(x)) + 3ˣ. On calcule u'(x).",
+
     "choices": [
-      "A) u'(x) = (1 - x²)/(x² + 1)² - sin(x)/(2 + cos(x)) + ln(3)·3ˣ.",
-      "B) u'(x) = (1 - x)/(x² + 1)² + (2 - sin(x))/(2 + cos(x)) + 3ˣ.",
-      "C) u'(x) = (1 - x²)/(x² + 1)² + sin(x)/(2 + cos(x)) + 3ˣ.",
-      "D) u'(x) = (1 - 2x)/(x² + 1)² + 1/(2 + cos(x)) + ln(3)·3ˣ.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u'(x) = (1 - x²)/(x² + 1)² - sin(x)/(2 + cos(x)) + ln(3)·3ˣ.",
+
+      "u'(x) = (1 - x)/(x² + 1)² + (2 - sin(x))/(2 + cos(x)) + 3ˣ.",
+
+      "u'(x) = (1 - x²)/(x² + 1)² + sin(x)/(2 + cos(x)) + 3ˣ.",
+
+      "u'(x) = (1 - 2x)/(x² + 1)² + 1/(2 + cos(x)) + ln(3)·3ˣ.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "hint": "Dérive séparément le quotient, le logarithme composé et l’exponentielle de base 3.",
+
     "explanation": "Le quotient donne (1 - x²)/(x² + 1)². Le logarithme donne -sin(x)/(2 + cos(x)). Enfin, (3ˣ)' = ln(3)·3ˣ."
+
   },
+
   {
+
     "subject": "Intégrales",
+
     "level": 3,
+
     "code": "301",
+
     "text": "On considère f(x) = 3x² - 2x + 4. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Une primitive est F(x) = x³ - x² + 4x",
+
       "Une primitive est F(x) = 6x - 2",
+
       "Une primitive est F(x) = x³ - 2x² + 4x",
+
       "F'(x) = 3x² - 2x + 4 pour F(x) = x³ - x² + 4x",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       3
+
     ],
+
     "hint": "Pour trouver une primitive d'un polynôme, augmente chaque exposant de 1 et divise par le nouvel exposant.",
+
     "explanation": "La dérivée de x³ - x² + 4x est 3x² - 2x + 4. Les propositions A et D sont vraies."
+
   },
+
   {
+
     "subject": "Intégrales",
+
     "level": 3,
+
     "code": "302",
+
     "text": "On considère I = ∫₀² (2x + 1) dx. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Une primitive est x² + x",
+
       "I = 6",
+
       "I = 4",
+
       "I = [x² + x]₀²",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       3
+
     ],
+
     "hint": "Calcule une primitive, puis évalue-la en 2 et en 0.",
+
     "explanation": "Une primitive est x² + x. I = (4 + 2) - 0 = 6."
+
   },
+
   {
+
     "subject": "Intégrales",
+
     "level": 3,
+
     "code": "303",
+
     "text": "On considère I = ∫₀¹ xeˣ dx. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "I = 1",
+
       "Une primitive est xeˣ",
+
       "Une primitive est (x - 1)eˣ",
+
       "Le calcul peut se faire par intégration par parties",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2,
+
       3
+
     ],
+
     "hint": "Pour intégrer un produit x eˣ, utilise une intégration par parties.",
+
     "explanation": "Une primitive est (x - 1)eˣ. Ainsi I = [(x - 1)eˣ]₀¹ = 1."
+
   },
+
   {
+
     "subject": "Intégrales",
+
     "level": 3,
+
     "code": "304",
+
     "text": "On considère la fonction f(x) = x² sur [0 ; 3]. Quelle est sa valeur moyenne sur cet intervalle ?",
+
     "choices": [
+
       "3",
+
       "9",
+
       "27",
+
       "1",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0
+
     ],
+
     "hint": "La valeur moyenne vaut 1/(b-a) × ∫ₐᵇ f(x) dx.",
+
     "explanation": "La valeur moyenne est (1/3) × ∫₀³ x² dx = (1/3) × 9 = 3."
+
   },
+
   {
+
     "subject": "Intégrales",
+
     "level": 3,
+
     "code": "305",
+
     "text": "On considère I = ∫₀^(π/2) cos(x) dx. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "I = 0",
+
       "I = 1",
+
       "Une primitive de cos(x) est sin(x)",
+
       "I = [sin(x)]₀^(π/2)",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       1,
+
       2,
+
       3
+
     ],
+
     "hint": "Rappelle-toi la primitive usuelle de cos(x).",
+
     "explanation": "I = sin(π/2) - sin(0) = 1."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-7",
+
     "text": "On considère l'équation différentielle (E) : y'(x) + 5y(x) = 2. On cherche sa solution générale. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = Ce^(5x) + x + 2/5, où C est une constante réelle.",
-      "B) y(x) = Ce^(-5x) + 2/5, où C est une constante réelle.",
-      "C) y(x) = e^(5x) + 2 + C, où C est une constante réelle.",
-      "D) y(x) = Ce^(-5x) + 2x, où C est une constante réelle.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = Ce^(5x) + x + 2/5, où C est une constante réelle.",
+
+      "y(x) = Ce^(-5x) + 2/5, où C est une constante réelle.",
+
+      "y(x) = e^(5x) + 2 + C, où C est une constante réelle.",
+
+      "y(x) = Ce^(-5x) + 2x, où C est une constante réelle.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "hint": "Résous d'abord l'équation homogène, puis cherche une solution particulière constante.",
+
     "explanation": "La solution générale est y = Ce^(-5x) + 2/5."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-8",
+
     "text": "On considère l'équation différentielle (E) : 2y'(x) + x²y(x) = x². On cherche sa solution générale. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = Ce^(-x²), où C est une constante réelle.",
-      "B) y(x) = Ce^(-x³) + 1, où C est une constante réelle.",
-      "C) y(x) = Ce^(x³) + 1, où C est une constante réelle.",
-      "D) y(x) = Ce^(x²) + x, où C est une constante réelle.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = Ce^(-x²), où C est une constante réelle.",
+
+      "y(x) = Ce^(-x³) + 1, où C est une constante réelle.",
+
+      "y(x) = Ce^(x³) + 1, où C est une constante réelle.",
+
+      "y(x) = Ce^(x²) + x, où C est une constante réelle.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "E"
+
     ],
+
     "hint": "Divise l'équation par 2 avant de résoudre l'équation homogène.",
+
     "explanation": "La solution homogène est y_h = Ce^(-x³/6). Aucune des propositions A à D ne possède cette solution homogène."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-11",
+
     "text": "On considère l'équation différentielle y'(x) + (x - 1)y(x) = x². On cherche l'unique solution vérifiant y(1) = -1. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = -3e^(-(x - 1)²/2) + x + 1",
-      "B) y(x) = -2e^(-(x - 1)²) + x",
-      "C) y(x) = -e^((x - 1)²/2) + x - 1",
-      "D) y(x) = -2e^((x - 1)²) + 1",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = -3e^(-(x - 1)²/2) + x + 1",
+
+      "y(x) = -2e^(-(x - 1)²) + x",
+
+      "y(x) = -e^((x - 1)²/2) + x - 1",
+
+      "y(x) = -2e^((x - 1)²) + 1",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "E"
+
     ],
+
     "hint": "La solution homogène contient l'exponentielle de l'opposé d'une primitive de x - 1. Vérifie ensuite la solution particulière.",
+
     "explanation": "La solution particulière proposée initialement, y_p = x + 1, ne vérifie pas l'équation différentielle. La solution indiquée en A ne convient donc pas."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-12",
+
     "text": "On considère l'équation différentielle y'(x) + x²y(x) = x². On cherche l'unique solution vérifiant y(0) = -2. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = -2e^(x³/3) + x",
-      "B) y(x) = e^(2x) + x - 3",
-      "C) y(x) = -e^(-x³/3) + x - 1",
-      "D) y(x) = -3e^(-x³/3) + 1",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = -2e^(x³/3) + x",
+
+      "y(x) = e^(2x) + x - 3",
+
+      "y(x) = -e^(-x³/3) + x - 1",
+
+      "y(x) = -3e^(-x³/3) + 1",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "hint": "Vérifie d'abord la solution homogène, puis la condition initiale en x = 0.",
+
     "explanation": "La solution homogène est y_h = Ce^(-x³/3). Une solution particulière est y_p = 1. La condition y(0) = -2 donne C = -3."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-15",
+
     "text": "On considère l'équation différentielle y'(x) + 2xy(x) = x² + x + 1/2. On cherche l'unique solution vérifiant y(0) = 1. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = (1/2)e^(-x²) + (1/2)(x + 1)",
-      "B) y(x) = (1/2)e^(x²) + (x + 1)",
-      "C) y(x) = e^(-2x²) + x/2",
-      "D) y(x) = (1/2)e^(-x²) + 1/2",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = (1/2)e^(-x²) + (1/2)(x + 1)",
+
+      "y(x) = (1/2)e^(x²) + (x + 1)",
+
+      "y(x) = e^(-2x²) + x/2",
+
+      "y(x) = (1/2)e^(-x²) + 1/2",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "E"
+
     ],
+
     "hint": "La solution homogène est de la forme Ce^(-x²). Vérifie si la solution particulière proposée convient.",
+
     "explanation": "La solution homogène est y_h = Ce^(-x²), mais y_p = (x + 1)/2 ne vérifie pas l'équation différentielle. Aucune des propositions A à D ne convient."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-17",
+
     "text": "On considère l'équation différentielle (1 - x)y'(x) + 2y(x) = x. On cherche une solution particulière. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = x + 1/2",
-      "B) y(x) = x - 1",
-      "C) y(x) = x - 1/2",
-      "D) y(x) = x",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = x + 1/2",
+
+      "y(x) = x - 1",
+
+      "y(x) = x - 1/2",
+
+      "y(x) = x",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "hint": "Essaie une solution particulière affine y_p(x) = ax + b, puis remplace-la dans l'équation.",
+
     "explanation": "Avec y_p = ax + b, l'identification donne a = 1 et b = -1/2. La solution particulière est x - 1/2."
+
   },
+
   {
+
     "subject": "Équations différentielles linéaires d’ordre 1",
+
     "level": 4,
+
     "code": "equadiff-18",
+
     "text": "On considère l'équation différentielle (x + 1)y'(x) - 2y(x) = x + 1. On cherche une solution particulière. Laquelle des propositions suivantes est exacte ?",
+
     "choices": [
-      "A) y(x) = x + 1",
-      "B) y(x) = x - 1",
-      "C) y(x) = -x - 1",
-      "D) y(x) = x",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "y(x) = x + 1",
+
+      "y(x) = x - 1",
+
+      "y(x) = -x - 1",
+
+      "y(x) = x",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "hint": "Teste les fonctions proposées en calculant leur dérivée et en les remplaçant dans l'équation.",
+
     "explanation": "Pour y(x) = -x - 1, le membre de gauche vaut -(x + 1) + 2(x + 1) = x + 1. La réponse C est correcte."
+
   },
+
   {
+
     "subject": "Équations différentielles",
+
     "level": 4,
+
     "code": "401",
+
     "text": "On considère l'équation différentielle y' = 3y. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Les solutions sont y = Ce^(3x)",
+
       "Les solutions sont y = 3x + C",
+
       "y = e^x est une solution",
+
       "y = 0 est une solution",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       3
+
     ],
+
     "hint": "Pour y' = ay, les solutions sont de la forme Ce^(ax).",
+
     "explanation": "La solution générale est y = Ce^(3x). Pour C = 0, on obtient la solution nulle."
+
   },
+
   {
+
     "subject": "Équations différentielles",
+
     "level": 4,
+
     "code": "402",
+
     "text": "On considère y' = 2x. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Les solutions sont y = x² + C",
+
       "Les solutions sont y = 2x + C",
+
       "y = x² + 1 est une solution",
+
       "Toute solution a pour dérivée 2x",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2,
+
       3
+
     ],
+
     "hint": "Cherche une primitive de 2x et ajoute une constante réelle.",
+
     "explanation": "Les solutions sont y = x² + C. La dérivée de chacune d'elles est bien 2x."
+
   },
+
   {
+
     "subject": "Équations différentielles",
+
     "level": 4,
+
     "code": "403",
+
     "text": "On considère y' + 2y = 0. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Les solutions sont y = Ce^(-2x)",
+
       "Les solutions sont y = Ce^(2x)",
+
       "y = 0 est une solution",
+
       "y = x² est une solution",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2
+
     ],
+
     "hint": "Réécris l'équation sous la forme y' = -2y.",
+
     "explanation": "La solution générale est y = Ce^(-2x). La solution nulle correspond à C = 0."
+
   },
+
   {
+
     "subject": "Équations différentielles",
+
     "level": 4,
+
     "code": "404",
+
     "text": "On considère y' = 2x + 1 avec y(0) = 3. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "La solution générale est y = x² + x + C",
+
       "La solution particulière est y = x² + x + 3",
+
       "La solution particulière est y = 2x + 3",
+
       "y(1) = 5",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       3
+
     ],
+
     "hint": "Intègre le membre de droite, puis utilise la condition initiale pour déterminer C.",
+
     "explanation": "Une primitive de 2x + 1 est x² + x + C. Comme y(0) = 3, C = 3. Donc y(1) = 5."
+
   },
+
   {
+
     "subject": "Équations différentielles",
+
     "level": 4,
+
     "code": "405",
+
     "text": "On considère y' = eˣ. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Les solutions sont y = eˣ + C",
+
       "y = eˣ est une solution",
+
       "Les solutions sont y = xeˣ",
+
       "Deux solutions diffèrent d'une constante",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       3
+
     ],
+
     "hint": "Cherche une primitive de eˣ.",
+
     "explanation": "Les solutions sont y = eˣ + C. La différence entre deux solutions est constante."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "trigonometrie-20",
+
     "text": "Parmi les propositions suivantes concernant les fonctions sinus, cosinus et tangente, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pour tout réel a, sin(a + π/4) = (√2/2)(sin(a) + cos(a)).",
-      "B) Pour tout réel a, cos(a) = 2(cos(a/2))² + 1.",
-      "C) Pour tout réel a différent de kπ/2, avec k ∈ ℤ, tan(π/2 - a)tan(a) = 1.",
-      "D) Pour tout réel a, cos(a + π/2) = sin(a).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel a, sin(a + π/4) = (√2/2)(sin(a) + cos(a)).",
+
+      "Pour tout réel a, cos(a) = 2(cos(a/2))² + 1.",
+
+      "Pour tout réel a différent de kπ/2, avec k ∈ ℤ, tan(π/2 - a)tan(a) = 1.",
+
+      "Pour tout réel a, cos(a + π/2) = sin(a).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "hint": "Utilise les formules d'addition et tan(π/2 − a) = 1/tan(a), lorsque les expressions sont définies.",
+
     "explanation": "A est vraie par la formule d'addition du sinus. B est fausse : cos(a) = 2cos²(a/2) − 1. C est vraie lorsque les tangentes sont définies. D est fausse car cos(a + π/2) = −sin(a)."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "trigonometrie-21",
+
     "text": "Parmi les propositions suivantes concernant les fonctions sinus et cosinus, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pour tout réel t, cos(2t) = 2 sin(t) cos(t).",
-      "B) Pour tout réel t, cos(t) = 0 si et seulement si t = (2k + 1)π/2, avec k ∈ ℤ.",
-      "C) Pour tout réel t, sin(t/2) = 0 si et seulement si t = 2kπ, avec k ∈ ℤ.",
-      "D) Pour tout réel t, cos(π/2 - t) = sin(t).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel t, cos(2t) = 2 sin(t) cos(t).",
+
+      "Pour tout réel t, cos(t) = 0 si et seulement si t = (2k + 1)π/2, avec k ∈ ℤ.",
+
+      "Pour tout réel t, sin(t/2) = 0 si et seulement si t = 2kπ, avec k ∈ ℤ.",
+
+      "Pour tout réel t, cos(π/2 - t) = sin(t).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C",
+
       "D"
+
     ],
+
     "hint": "Utilise les formules de duplication et les solutions générales des équations trigonométriques.",
+
     "explanation": "A est fausse car cos(2t) = cos²(t) − sin²(t). B, C et D sont vraies."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5001",
+
     "text": "Dans le plan Oxy, on considère A(-1 ; -3), B(2 ; 3), C(-2 ; 2) et D(4 ; -1). Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) La droite (AB) a pour coefficient directeur m = -2.",
-      "B) La droite (CD) a pour coefficient directeur m = -1/2.",
-      "C) La droite (CD) a pour équation y = -x/2 - 1.",
-      "D) Les droites (AB) et (CD) sont perpendiculaires.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "La droite (AB) a pour coefficient directeur m = -2.",
+
+      "La droite (CD) a pour coefficient directeur m = -1/2.",
+
+      "La droite (CD) a pour équation y = -x/2 - 1.",
+
+      "Les droites (AB) et (CD) sont perpendiculaires.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "hint": "Calcule les coefficients directeurs avec m = (y₂ - y₁)/(x₂ - x₁).",
+
     "explanation": "m_AB = 2 et m_CD = -1/2. Leur produit vaut -1, donc les droites sont perpendiculaires. L'équation de (CD) est y = -x/2 + 1."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5019",
+
     "text": "Sur le cercle trigonométrique de centre O(0 ; 0), on considère A(1 ; 0) et B(1/2 ; √3/2). Quelles propositions concernant l'angle orienté (OA ; OB) sont exactes ?",
+
     "choices": [
-      "A) Une mesure de l'angle en radians est π/6.",
-      "B) Une mesure de l'angle en radians est π/3.",
-      "C) La tangente de l'angle vaut √3.",
-      "D) La cotangente de l'angle vaut √3.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Une mesure de l'angle en radians est π/6.",
+
+      "Une mesure de l'angle en radians est π/3.",
+
+      "La tangente de l'angle vaut √3.",
+
+      "La cotangente de l'angle vaut √3.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "hint": "Sur le cercle trigonométrique, les coordonnées de B donnent le cosinus et le sinus de l'angle.",
+
     "explanation": "Les coordonnées de B sont (cos θ ; sin θ) = (1/2 ; √3/2), donc θ = π/3. La tangente vaut √3."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5018",
+
     "text": "Dans le plan, on considère A(1 ; 0), B(-1/2 ; √3/2) et C(-1/2 ; -√3/2). Quelles propositions concernant le triangle ABC sont exactes ?",
+
     "choices": [
-      "A) La distance AB vaut √3.",
-      "B) Le triangle ABC est rectangle.",
-      "C) L'aire du triangle ABC vaut 3√3/2.",
-      "D) Le triangle ABC est équilatéral.",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "La distance AB vaut √3.",
+
+      "Le triangle ABC est rectangle.",
+
+      "L'aire du triangle ABC vaut 3√3/2.",
+
+      "Le triangle ABC est équilatéral.",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "hint": "Calcule les distances avec AB = √((xB - xA)² + (yB - yA)²).",
+
     "explanation": "Les trois côtés mesurent √3 : le triangle est équilatéral. Son aire vaut 3√3/4, et non 3√3/2."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5020",
+
     "text": "Parmi les propositions suivantes concernant les fonctions sinus, cosinus et tangente, lesquelles sont exactes ?",
+
     "choices": [
-      "A) Pour tout réel a, sin(a + π/4) = (√2/2)(sin(a) + cos(a)).",
-      "B) Pour tout réel a, cos(a) = 2cos²(a/2) + 1.",
-      "C) Pour tout réel a différent de kπ/2, avec k ∈ ℤ, tan(π/2 - a)tan(a) = 1.",
-      "D) Pour tout réel a, cos(a + π/2) = sin(a).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel a, sin(a + π/4) = (√2/2)(sin(a) + cos(a)).",
+
+      "Pour tout réel a, cos(a) = 2cos²(a/2) + 1.",
+
+      "Pour tout réel a différent de kπ/2, avec k ∈ ℤ, tan(π/2 - a)tan(a) = 1.",
+
+      "Pour tout réel a, cos(a + π/2) = sin(a).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "hint": "Utilise les formules d'addition et les identités de duplication. Attention aux signes.",
+
     "explanation": "A est vraie. B est fausse : cos(a) = 2cos²(a/2) - 1. C est vraie lorsque les deux tangentes sont définies. D est fausse."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5021",
+
     "text": "Parmi les propositions suivantes concernant les fonctions sinus et cosinus, lesquelles sont exactes ?",
+
     "choices": [
-      "A) Pour tout réel t, cos(2t) = 2sin(t)cos(t).",
-      "B) cos(t) = 0 si et seulement si t = (2k + 1)π/2, avec k ∈ ℤ.",
-      "C) sin(t/2) = 0 si et seulement si t = 2kπ, avec k ∈ ℤ.",
-      "D) Pour tout réel t, cos(π/2 - t) = sin(t).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel t, cos(2t) = 2sin(t)cos(t).",
+
+      "cos(t) = 0 si et seulement si t = (2k + 1)π/2, avec k ∈ ℤ.",
+
+      "sin(t/2) = 0 si et seulement si t = 2kπ, avec k ∈ ℤ.",
+
+      "Pour tout réel t, cos(π/2 - t) = sin(t).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C",
+
       "D"
+
     ],
+
     "hint": "Distingue la formule du cosinus d'un angle double de celle du sinus d'un angle double.",
+
     "explanation": "A est fausse car cos(2t) = cos²(t) - sin²(t). B, C et D sont vraies."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5023",
+
     "text": "On considère les identités trigonométriques suivantes. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Pour tout réel t, sin(t + π/2) = cos(t).",
-      "B) Pour tout réel t, cos(t + π/2) = sin(t).",
-      "C) Pour tout réel t, sin(π - t) = sin(t).",
-      "D) Pour tout réel t, cos(π - t) = cos(t).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel t, sin(t + π/2) = cos(t).",
+
+      "Pour tout réel t, cos(t + π/2) = sin(t).",
+
+      "Pour tout réel t, sin(π - t) = sin(t).",
+
+      "Pour tout réel t, cos(π - t) = cos(t).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "hint": "Utilise les formules d'addition et fais attention au signe.",
+
     "explanation": "A est vraie car sin(t + π/2) = cos(t). B est fausse car cos(t + π/2) = -sin(t). C est vraie. D est fausse car cos(π - t) = -cos(t)."
+
   },
+
   {
+
     "subject": "Trigonométrie",
+
     "level": 5,
+
     "code": "5024",
+
     "text": "Parmi les propositions suivantes concernant les fonctions sinus et cosinus, lesquelles sont exactes ?",
+
     "choices": [
-      "A) Pour tout réel t, cos(t + π/3) + cos(t - π/3) = cos(t).",
-      "B) Pour tout réel t, sin(t + π/6) = sin(t).",
-      "C) Pour tout réel t, sin(t + π) + sin(t - π) = -2sin(t).",
-      "D) Pour tout réel t, cos(t + π) + cos(t - π) = 2cos(t).",
-      "E) Aucune des propositions ci-dessus n'est exacte."
+
+      "Pour tout réel t, cos(t + π/3) + cos(t - π/3) = cos(t).",
+
+      "Pour tout réel t, sin(t + π/6) = sin(t).",
+
+      "Pour tout réel t, sin(t + π) + sin(t - π) = -2sin(t).",
+
+      "Pour tout réel t, cos(t + π) + cos(t - π) = 2cos(t).",
+
+      "Aucune des propositions ci-dessus n'est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "hint": "Les formules d'addition permettent de regrouper les termes en cos(t) et sin(t).",
+
     "explanation": "A et C sont vraies. B est fausse. D est fausse : la somme vaut -2cos(t)."
+
   },
+
   {
+
     "subject": "Géométrie et trigonométrie",
+
     "level": 5,
+
     "code": "501",
+
     "text": "Dans un repère, A(1 ; 2) et B(4 ; 6). Quelles propositions sont exactes ?",
+
     "choices": [
+
       "AB = 5",
+
       "Le milieu de [AB] est (2,5 ; 4)",
+
       "Le vecteur AB a pour coordonnées (3 ; 4)",
+
       "Le coefficient directeur de (AB) est 4/3",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       2,
+
       3
+
     ],
+
     "hint": "Utilise la distance, les coordonnées du milieu et le rapport des variations de y et de x.",
+
     "explanation": "AB = 5. Le milieu est (2,5 ; 4), le vecteur AB vaut (3 ; 4) et le coefficient directeur vaut 4/3."
+
   },
+
   {
+
     "subject": "Géométrie et trigonométrie",
+
     "level": 5,
+
     "code": "502",
+
     "text": "On considère la droite d'équation 2x - y = 3. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "Son coefficient directeur est -2",
+
       "Son coefficient directeur est 2",
+
       "Elle coupe l'axe des ordonnées en (0 ; -3)",
+
       "Un vecteur directeur est (1 ; 2)",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       1,
+
       2,
+
       3
+
     ],
+
     "hint": "Mets l'équation sous la forme y = mx + p.",
+
     "explanation": "On obtient y = 2x - 3. Le coefficient directeur est 2, l'ordonnée à l'origine est -3 et (1 ; 2) est un vecteur directeur."
+
   },
+
   {
+
     "subject": "Géométrie et trigonométrie",
+
     "level": 5,
+
     "code": "503",
+
     "text": "Quelles identités trigonométriques sont exactes pour tout réel x ?",
+
     "choices": [
+
       "sin²(x) + cos²(x) = 1",
+
       "cos(-x) = -cos(x)",
+
       "sin(-x) = -sin(x)",
+
       "cos(x + π) = cos(x)",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       2
+
     ],
+
     "hint": "Rappelle-toi l'identité fondamentale et la parité du sinus et du cosinus.",
+
     "explanation": "sin²(x) + cos²(x) = 1. Le sinus est impair et le cosinus est pair. De plus, cos(x + π) = -cos(x)."
+
   },
+
   {
+
     "subject": "Géométrie et trigonométrie",
+
     "level": 5,
+
     "code": "504",
+
     "text": "On sait que cos(x) = 1/2 et que x ∈ [0 ; π/2]. Quelles propositions sont exactes ?",
+
     "choices": [
+
       "x = π/3",
+
       "sin(x) = √3/2",
+
       "tan(x) = 1/√3",
+
       "tan(x) = √3",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       3
+
     ],
+
     "hint": "Utilise les valeurs remarquables pour un angle de 60°.",
+
     "explanation": "Dans l'intervalle indiqué, x = π/3. Son sinus vaut √3/2 et sa tangente vaut √3."
+
   },
+
   {
+
     "subject": "Géométrie et trigonométrie",
+
     "level": 5,
+
     "code": "505",
+
     "text": "On considère A(0 ; 0), B(4 ; 0) et C(0 ; 3). Quelles propositions sont exactes ?",
+
     "choices": [
+
       "AB = 4",
+
       "AC = 3",
+
       "BC = 5",
+
       "Le triangle ABC est rectangle en A",
+
       "Aucune des propositions précédentes"
+
     ],
+
     "answer": [
+
       0,
+
       1,
+
       2,
+
       3
+
     ],
+
     "hint": "Calcule les longueurs et vérifie le théorème de Pythagore.",
+
     "explanation": "AB = 4, AC = 3 et BC = 5. Comme AB² + AC² = BC², le triangle est rectangle en A."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère l’équation 3x² + 8x − 3 = 0. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Elle n’a aucune solution réelle.",
-      "B) Elle admet deux solutions réelles distinctes.",
-      "C) La somme des solutions vaut 8/3.",
-      "D) Le trinôme 3x² + 8x − 3 est positif pour tout x ≥ 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Elle n’a aucune solution réelle.",
+
+      "Elle admet deux solutions réelles distinctes.",
+
+      "La somme des solutions vaut 8/3.",
+
+      "Le trinôme 3x² + 8x − 3 est positif pour tout x ≥ 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "equation_second_degre_01",
+
     "hint": "Calcule le discriminant, puis détermine les racines et étudie le signe du trinôme.",
+
     "explanation": "Le discriminant vaut Δ = 8² − 4 × 3 × (−3) = 100 > 0 : il existe deux racines distinctes, −3 et 1/3. Leur somme vaut −8/3, et non 8/3. Comme le coefficient de x² est positif, le trinôme est positif à l’extérieur des racines ; il est donc positif pour x ≥ 1."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère l’équation 4x² + 12x + 9 = 0. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Elle n’a aucune solution réelle.",
-      "B) Elle a une solution réelle double.",
-      "C) Elle admet deux solutions réelles distinctes.",
-      "D) Le produit des racines vaut 9/4.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Elle n’a aucune solution réelle.",
+
+      "Elle a une solution réelle double.",
+
+      "Elle admet deux solutions réelles distinctes.",
+
+      "Le produit des racines vaut 9/4.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "equation_second_degre_02",
+
     "hint": "Calcule Δ, puis utilise la relation entre le produit des racines et les coefficients.",
+
     "explanation": "Δ = 12² − 4 × 4 × 9 = 0 : l’équation possède une racine double, égale à −3/2. Le produit des racines, comptées avec multiplicité, vaut c/a = 9/4."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 3x − 4y = 2 et −5x + 2y = −8. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) Les droites 3x − 4y = 2 et −5x + 2y = −8 sont sécantes.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "Les droites 3x − 4y = 2 et −5x + 2y = −8 sont sécantes.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_01",
+
     "hint": "Calcule le déterminant des coefficients des deux équations.",
+
     "explanation": "Le déterminant vaut 3 × 2 − (−5 × −4) = −14, donc il est non nul. Le système admet un unique couple solution. Géométriquement, les deux droites sont sécantes."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 4x − 12y = 1 et −3x + 9y = −3/4. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) Tous les points M(x ; y) solutions du système sont alignés.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "Tous les points M(x ; y) solutions du système sont alignés.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_02",
+
     "hint": "Vérifie si l’une des équations est un multiple exact de l’autre, y compris pour le second membre.",
+
     "explanation": "En multipliant la première équation par −3/4, on obtient −3x + 9y = −3/4, soit exactement la seconde équation. Les deux équations représentent la même droite : il existe une infinité de solutions, toutes alignées."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 9x − 6y = 12 et −12x + 8y = 16. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système a une infinité de solutions.",
-      "B) Le système n’a aucune solution réelle.",
-      "C) Le système a un unique couple solution.",
-      "D) L’ensemble des solutions forme une droite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système a une infinité de solutions.",
+
+      "Le système n’a aucune solution réelle.",
+
+      "Le système a un unique couple solution.",
+
+      "L’ensemble des solutions forme une droite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "systeme_lineaire_03",
+
     "hint": "Les coefficients des inconnues sont proportionnels : compare ensuite les seconds membres.",
+
     "explanation": "Le déterminant vaut 9 × 8 − (−12 × −6) = 0. Les équations sont incompatibles : multiplier la première par −4/3 donne −12x + 8y = −16, alors que la seconde impose −12x + 8y = 16. Il n’existe donc aucune solution."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 6x − 3y = 21 et −4x + 2y = −14. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Il y a une infinité de solutions.",
-      "B) Il n’a aucune solution réelle.",
-      "C) Il a un unique couple solution.",
-      "D) L’ensemble des solutions forme une droite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Il y a une infinité de solutions.",
+
+      "Il n’a aucune solution réelle.",
+
+      "Il a un unique couple solution.",
+
+      "L’ensemble des solutions forme une droite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_04",
+
     "hint": "Multiplie la première équation par −2/3 et compare-la à la seconde.",
+
     "explanation": "En multipliant 6x − 3y = 21 par −2/3, on obtient −4x + 2y = −14, qui est exactement la seconde équation. Le système représente une seule droite et possède une infinité de solutions."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 4x − 6y = 3 et −6x + 9y = −9/2. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) L’ensemble des solutions forme une droite du plan Oxy.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "L’ensemble des solutions forme une droite du plan Oxy.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_05",
+
     "hint": "Multiplie la première équation par −3/2 et compare les deux équations.",
+
     "explanation": "La première équation multipliée par −3/2 devient −6x + 9y = −9/2, exactement la seconde équation. Les équations sont identiques : il existe une infinité de solutions, qui forment une droite."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 7x − 5y + 1 = −2x + y + 4 et −2x + 3y − 1 = 4x − y − 3. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) L’ensemble des solutions forme une droite du plan Oxy.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "L’ensemble des solutions forme une droite du plan Oxy.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_06",
+
     "hint": "Réduis chaque équation en regroupant les termes en x, les termes en y et les constantes.",
+
     "explanation": "Le système se simplifie en 9x − 6y = 3 et −6x + 4y = −2. En multipliant la première équation par −2/3, on obtient la seconde. Les deux équations représentent la même droite : il y a une infinité de solutions alignées."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 3x − 2y + 1 = −3x + 2y + 3 et −5x + 7y − 1 = 4x + y − 4. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) L’ensemble des solutions forme une droite du plan Oxy.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "L’ensemble des solutions forme une droite du plan Oxy.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_07",
+
     "hint": "Simplifie le système : les deux équations deviennent-elles proportionnelles ?",
+
     "explanation": "Après simplification, le système devient 6x − 4y = 2 et −9x + 6y = −3. La seconde équation est égale à −3/2 fois la première. Les deux équations sont donc équivalentes : il existe une infinité de solutions formant une droite."
+
   },
+
   {
+
     "subject": "Équations",
+
     "level": 1,
+
     "text": "On considère le système réel : 3x − 4y + 1 = x + 2y + 5 et x − 7y − 1 = −2x + 2y + 5. Quelles propositions sont exactes ?",
+
     "choices": [
-      "A) Le système n’a aucun couple solution.",
-      "B) Le système a un unique couple solution.",
-      "C) Le système a une infinité de couples solutions.",
-      "D) Tous les points M(x ; y) solutions du système sont alignés.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le système n’a aucun couple solution.",
+
+      "Le système a un unique couple solution.",
+
+      "Le système a une infinité de couples solutions.",
+
+      "Tous les points M(x ; y) solutions du système sont alignés.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C",
+
       "D"
+
     ],
+
     "code": "systeme_lineaire_08",
+
     "hint": "Réduis les équations : tu dois obtenir 2x − 6y = 4 et 3x − 9y = 6.",
+
     "explanation": "Après simplification, le système devient 2x − 6y = 4 et 3x − 9y = 6. La seconde équation est égale à 3/2 fois la première. Elles représentent la même droite : il existe une infinité de solutions, toutes alignées."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère la suite (uₙ), définie pour n ≥ 1 par uₙ = (-1)ⁿ/n + n³/(3n + 1). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) limₙ→₊∞ uₙ = +∞.",
-      "B) limₙ→₊∞ uₙ = 0.",
-      "C) limₙ→₊∞ uₙ = 1.",
-      "D) La suite n’admet pas de limite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "limₙ→₊∞ uₙ = +∞.",
+
+      "limₙ→₊∞ uₙ = 0.",
+
+      "limₙ→₊∞ uₙ = 1.",
+
+      "La suite n’admet pas de limite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-1",
+
     "hint": "Compare les ordres de grandeur de n³ et de 3n + 1.",
+
     "explanation": "Le terme (-1)ⁿ/n tend vers 0. En revanche, n³/(3n + 1) est équivalent à n²/3 et tend vers +∞. Donc uₙ tend vers +∞. La correction du document indique D, mais son raisonnement oublie le facteur 1/n dans le premier terme et se trompe aussi sur la limite du second."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère, pour n ≥ 0, la suite uₙ = (3ⁿ + 2ⁿ cos(nπ))/(n⁶ + 1). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) limₙ→₊∞ uₙ = +∞.",
-      "B) limₙ→₊∞ uₙ = 0.",
-      "C) limₙ→₊∞ uₙ = 1.",
-      "D) La suite n’admet pas de limite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "limₙ→₊∞ uₙ = +∞.",
+
+      "limₙ→₊∞ uₙ = 0.",
+
+      "limₙ→₊∞ uₙ = 1.",
+
+      "La suite n’admet pas de limite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-2",
+
     "hint": "Utilise -1 ≤ cos(nπ) ≤ 1 et compare les puissances exponentielles au polynôme n⁶.",
+
     "explanation": "Le terme 2ⁿ cos(nπ) est négligeable devant 3ⁿ. Le numérateur est donc dominé par 3ⁿ, qui croît plus vite que le dénominateur polynomial n⁶ + 1. La limite est +∞."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère, pour n ≥ 0, la suite uₙ = (cos(3n) + 2ⁿ)/(2n² + 1). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) limₙ→₊∞ uₙ = +∞.",
-      "B) limₙ→₊∞ uₙ = 0.",
-      "C) limₙ→₊∞ uₙ = 1.",
-      "D) La suite n’admet pas de limite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "limₙ→₊∞ uₙ = +∞.",
+
+      "limₙ→₊∞ uₙ = 0.",
+
+      "limₙ→₊∞ uₙ = 1.",
+
+      "La suite n’admet pas de limite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-3",
+
     "hint": "Le cosinus est borné ; compare 2ⁿ à n².",
+
     "explanation": "Le terme cos(3n) reste borné tandis que 2ⁿ croît exponentiellement. Le numérateur est dominé par 2ⁿ, qui croît plus vite que le dénominateur polynomial. La limite est +∞."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère, pour n ≥ 0, la suite uₙ = n²/5ⁿ - cos(n)/(1 + √n). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) limₙ→₊∞ uₙ = +∞.",
-      "B) limₙ→₊∞ uₙ = -∞.",
-      "C) limₙ→₊∞ uₙ = 0.",
-      "D) La suite n’admet pas de limite.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "limₙ→₊∞ uₙ = +∞.",
+
+      "limₙ→₊∞ uₙ = -∞.",
+
+      "limₙ→₊∞ uₙ = 0.",
+
+      "La suite n’admet pas de limite.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "code": "suite-4",
+
     "hint": "Étudie séparément les deux termes et utilise le fait que le cosinus est borné.",
+
     "explanation": "n²/5ⁿ tend vers 0, car l’exponentielle 5ⁿ domine le polynôme n². De plus, |cos(n)/(1 + √n)| ≤ 1/(1 + √n), qui tend vers 0. La somme tend donc vers 0."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère, pour n ≥ 0, la suite uₙ = (sin(2n) + 3ⁿ)/((-1)ⁿ + 2√n). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) limₙ→₊∞ uₙ = +∞.",
-      "B) uₙ = 1/2.",
-      "C) uₙ = 3/2.",
-      "D) uₙ = 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "limₙ→₊∞ uₙ = +∞.",
+
+      "uₙ = 1/2.",
+
+      "uₙ = 3/2.",
+
+      "uₙ = 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-5",
+
     "hint": "Le sinus et (-1)ⁿ sont bornés ; compare les termes dominants du numérateur et du dénominateur.",
+
     "explanation": "Le numérateur est dominé par 3ⁿ, tandis que le dénominateur croît comme 2√n. Le quotient tend donc vers +∞."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Un pharmacien vend 1 000 boîtes d’un médicament la première année. Chaque année, il en vend 150 de plus que l’année précédente. On note vₙ le nombre de boîtes vendues l’année n et S le nombre total de boîtes vendues de l’année 1 à l’année 10. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) v₁₀ = 2 500.",
-      "B) v₁₀ = 2 350.",
-      "C) S = 16 750.",
-      "D) S = 17 500.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "v₁₀ = 2 500.",
+
+      "v₁₀ = 2 350.",
+
+      "S = 16 750.",
+
+      "S = 17 500.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "code": "suite-6",
+
     "hint": "C’est une suite arithmétique de premier terme v₁ = 1 000 et de raison 150.",
+
     "explanation": "v₁₀ = 1 000 + 9 × 150 = 2 350. La somme des 10 termes vaut (v₁ + v₁₀) × 10 / 2 = 16 750."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite arithmétique de premier terme u₀ = 10 et vérifiant uₙ₊₁ = uₙ + 5 pour n ≥ 0. On cherche u₃₀ et S = u₀ + u₁ + … + u₃₀. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) u₃₀ = 160.",
-      "B) u₃₀ = 155.",
-      "C) S = 2 550.",
-      "D) S = 2 635.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u₃₀ = 160.",
+
+      "u₃₀ = 155.",
+
+      "S = 2 550.",
+
+      "S = 2 635.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "suite-7",
+
     "hint": "Calcule u₃₀, puis compte bien les termes de u₀ à u₃₀ inclus.",
+
     "explanation": "u₃₀ = 10 + 30 × 5 = 160. Il y a 31 termes de u₀ à u₃₀, donc S = (10 + 160) × 31 / 2 = 2 635."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite arithmétique de premier terme u₀ = 2 et de raison 7. On veut calculer S = u₀ + u₁ + … + u₈₀. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) S ≈ 22 240.",
-      "B) S ≈ 22 518.",
-      "C) S ≈ 22 560.",
-      "D) S ≈ 22 842.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "S ≈ 22 240.",
+
+      "S ≈ 22 518.",
+
+      "S ≈ 22 560.",
+
+      "S ≈ 22 842.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "code": "suite-8",
+
     "hint": "Il y a 81 termes ; calcule d’abord u₈₀.",
+
     "explanation": "u₈₀ = 2 + 7 × 80 = 562. Donc S = (2 + 562) × 81 / 2 = 22 842."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère la suite définie par uₙ = 3 + 5n. On cherche S = u₀ + u₁ + … + u₅₀. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) S = 6 328.",
-      "B) S = 6 528.",
-      "C) S = 6 400.",
-      "D) S = 6 458.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "S = 6 328.",
+
+      "S = 6 528.",
+
+      "S = 6 400.",
+
+      "S = 6 458.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "suite-9",
+
     "hint": "Calcule u₀ et u₅₀, puis utilise la formule de somme d’une suite arithmétique.",
+
     "explanation": "u₀ = 3 et u₅₀ = 3 + 5 × 50 = 253. Il y a 51 termes, donc S = (3 + 253) × 51 / 2 = 6 528."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite de premier terme u₀ = 1 000 vérifiant uₙ₊₁ = 0,8uₙ pour n ≥ 0. On veut calculer u₂₀. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) u₂₀ ≈ 11,5.",
-      "B) u₂₀ ≈ 14,4.",
-      "C) u₂₀ ≈ 9,2.",
-      "D) u₂₀ ≈ 10,8.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u₂₀ ≈ 11,5.",
+
+      "u₂₀ ≈ 14,4.",
+
+      "u₂₀ ≈ 9,2.",
+
+      "u₂₀ ≈ 10,8.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-10",
+
     "hint": "C’est une suite géométrique : uₙ = u₀ × qⁿ.",
+
     "explanation": "u₂₀ = 1 000 × 0,8²⁰ ≈ 11,5."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite de premier terme u₁ = 2 vérifiant uₙ₊₁ = 1,20uₙ. On cherche la valeur entière la plus proche de u₂₀. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) u₂₀ ≈ 81.",
-      "B) u₂₀ ≈ 77.",
-      "C) u₂₀ ≈ 64.",
-      "D) u₂₀ ≈ 72.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u₂₀ ≈ 81.",
+
+      "u₂₀ ≈ 77.",
+
+      "u₂₀ ≈ 64.",
+
+      "u₂₀ ≈ 72.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "code": "suite-11",
+
     "hint": "Le premier terme est u₁ : l’exposant doit donc être 20 − 1.",
+
     "explanation": "La forme explicite est uₙ = 2 × 1,2ⁿ⁻¹. Ainsi, u₂₀ = 2 × 1,2¹⁹ ≈ 63,9, soit environ 64."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite géométrique (vₙ) de premier terme v₀ = 5 et de raison q = 0,9. Parmi les propositions suivantes concernant v₂₀, laquelle est exacte ?",
+
     "choices": [
-      "A) v₂₀ ≈ 0,55.",
-      "B) v₂₀ ≈ 0,61.",
-      "C) v₂₀ ≈ 1,22.",
-      "D) v₂₀ ≈ 0,002.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "v₂₀ ≈ 0,55.",
+
+      "v₂₀ ≈ 0,61.",
+
+      "v₂₀ ≈ 1,22.",
+
+      "v₂₀ ≈ 0,002.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "suite-12",
+
     "hint": "Utilise vₙ = v₀ × qⁿ.",
+
     "explanation": "v₂₀ = 5 × 0,9²⁰ ≈ 0,61."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère la suite (Pₙ) vérifiant Pₙ₊₁ = 0,9Pₙ + 100 et P₀ = 200. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) Pour tout n ≥ 0, Pₙ = -800 × 0,9ⁿ + 1 000.",
-      "B) Pour tout n ≥ 0, Pₙ = 800 × 0,9ⁿ + 1 000.",
-      "C) Pour tout n ≥ 0, Pₙ = 400 × 1,1ⁿ - 200.",
-      "D) Pour tout n ≥ 0, Pₙ = 1 000 × 1,9ⁿ - 800.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pour tout n ≥ 0, Pₙ = -800 × 0,9ⁿ + 1 000.",
+
+      "Pour tout n ≥ 0, Pₙ = 800 × 0,9ⁿ + 1 000.",
+
+      "Pour tout n ≥ 0, Pₙ = 400 × 1,1ⁿ - 200.",
+
+      "Pour tout n ≥ 0, Pₙ = 1 000 × 1,9ⁿ - 800.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "suite-13",
+
     "hint": "Cherche d’abord la constante C telle que C = 0,9C + 100.",
+
     "explanation": "La constante vérifie C = 0,9C + 100, donc C = 1 000. La suite Pₙ − 1 000 est géométrique de raison 0,9 et de premier terme -800. Ainsi, Pₙ = -800 × 0,9ⁿ + 1 000."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population compte 1 000 individus à l’année 0 et diminue de 12 % chaque année. Parmi les propositions suivantes concernant (Pₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pₙ₊₁ = 0,12Pₙ pour tout n ≥ 0.",
-      "B) Pₙ₊₁ = 0,88Pₙ pour tout n ≥ 0.",
-      "C) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 6 291.",
-      "D) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 6 012.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pₙ₊₁ = 0,12Pₙ pour tout n ≥ 0.",
+
+      "Pₙ₊₁ = 0,88Pₙ pour tout n ≥ 0.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 6 291.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 6 012.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "code": "suite-14",
+
     "hint": "Une baisse de 12 % correspond à un coefficient multiplicateur de 0,88. La somme comprend 11 termes.",
+
     "explanation": "Pₙ₊₁ = 0,88Pₙ. La somme géométrique vaut 1 000 × (1 − 0,88¹¹)/(1 − 0,88) ≈ 6 291."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population compte 50 individus à l’année 0 et augmente de 15 % chaque année. Parmi les propositions suivantes concernant (Pₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pₙ₊₁ = 1,15Pₙ pour tout n ≥ 0.",
-      "B) Pₙ₊₁ = 0,15Pₙ pour tout n ≥ 0.",
-      "C) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 015.",
-      "D) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 217.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pₙ₊₁ = 1,15Pₙ pour tout n ≥ 0.",
+
+      "Pₙ₊₁ = 0,15Pₙ pour tout n ≥ 0.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 015.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 217.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "suite-15",
+
     "hint": "La somme de P₀ à P₁₀ comporte 11 termes.",
+
     "explanation": "Le coefficient multiplicateur est 1,15. La somme vaut 50 × (1 − 1,15¹¹)/(1 − 1,15) ≈ 1 217."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population compte 100 individus à l’année 0 et augmente de 10 % chaque année. Parmi les propositions suivantes concernant (Pₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pₙ₊₁ = 1,10Pₙ pour tout n ≥ 0.",
-      "B) Pₙ₊₁ = 0,10Pₙ pour tout n ≥ 0.",
-      "C) La somme P₀ + P₁ + … + P₁₂, arrondie à l’entier le plus proche, vaut 2 452.",
-      "D) La somme P₀ + P₁ + … + P₁₂, arrondie à l’entier le plus proche, vaut 2 138.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pₙ₊₁ = 1,10Pₙ pour tout n ≥ 0.",
+
+      "Pₙ₊₁ = 0,10Pₙ pour tout n ≥ 0.",
+
+      "La somme P₀ + P₁ + … + P₁₂, arrondie à l’entier le plus proche, vaut 2 452.",
+
+      "La somme P₀ + P₁ + … + P₁₂, arrondie à l’entier le plus proche, vaut 2 138.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "code": "suite-16",
+
     "hint": "La somme de P₀ à P₁₂ comporte 13 termes.",
+
     "explanation": "Pₙ₊₁ = 1,10Pₙ. La somme vaut 100 × (1 − 1,10¹³)/(1 − 1,10) ≈ 2 452."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population compte 200 individus à l’année 0 et diminue de 5 % chaque année. Parmi les propositions suivantes concernant (Pₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Pₙ₊₁ = 0,95Pₙ pour tout n ≥ 0.",
-      "B) Pₙ₊₁ = 0,05Pₙ pour tout n ≥ 0.",
-      "C) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 605.",
-      "D) La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 725.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pₙ₊₁ = 0,95Pₙ pour tout n ≥ 0.",
+
+      "Pₙ₊₁ = 0,05Pₙ pour tout n ≥ 0.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 605.",
+
+      "La somme P₀ + P₁ + … + P₁₀, arrondie à l’entier le plus proche, vaut 1 725.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "suite-17",
+
     "hint": "Une baisse de 5 % donne une raison de 0,95 ; compte les 11 termes.",
+
     "explanation": "La somme vaut 200 × (1 − 0,95¹¹)/(1 − 0,95) ≈ 1 725."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "On considère une suite (Pₙ) de premier terme P₀ = 100 vérifiant Pₙ₊₁ = 1,15Pₙ pour n ≥ 0. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) P₁₂ ≈ 465.",
-      "B) P₁₂ ≈ 535.",
-      "C) La somme P₀ + P₁ + … + P₁₂ ≈ 3 435.",
-      "D) La somme P₀ + P₁ + … + P₁₂ ≈ 2 900.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "P₁₂ ≈ 465.",
+
+      "P₁₂ ≈ 535.",
+
+      "La somme P₀ + P₁ + … + P₁₂ ≈ 3 435.",
+
+      "La somme P₀ + P₁ + … + P₁₂ ≈ 2 900.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "code": "suite-18",
+
     "hint": "Calcule P₁₂ = 100 × 1,15¹², puis la somme des 13 termes.",
+
     "explanation": "P₁₂ ≈ 535. La somme vaut 100 × (1 − 1,15¹³)/(1 − 1,15) ≈ 3 435."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une culture de bactéries compte 7 000 individus à l’heure 0. La population augmente de 8 % chaque heure, puis on prélève 500 bactéries chaque heure. Parmi les propositions suivantes concernant (Bₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Bₙ₊₁ = 1,08Bₙ - 500 pour tout n ≥ 0.",
-      "B) Bₙ₊₁ = 0,08Bₙ - 500 pour tout n ≥ 0.",
-      "C) Bₙ = 750 × 0,08ⁿ + 6 250 pour tout n ≥ 0.",
-      "D) Bₙ = 750 × 1,08ⁿ + 6 250 pour tout n ≥ 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Bₙ₊₁ = 1,08Bₙ - 500 pour tout n ≥ 0.",
+
+      "Bₙ₊₁ = 0,08Bₙ - 500 pour tout n ≥ 0.",
+
+      "Bₙ = 750 × 0,08ⁿ + 6 250 pour tout n ≥ 0.",
+
+      "Bₙ = 750 × 1,08ⁿ + 6 250 pour tout n ≥ 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "suite-19",
+
     "hint": "Traduis l’augmentation de 8 %, puis cherche la constante C vérifiant C = 1,08C - 500.",
+
     "explanation": "La récurrence est Bₙ₊₁ = 1,08Bₙ - 500. La constante d’équilibre est 6 250 ; Bₙ − 6 250 est géométrique de raison 1,08 et de premier terme 750. Donc Bₙ = 750 × 1,08ⁿ + 6 250."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une culture de cellules compte 12 000 cellules à l’heure 0. La population augmente de 15 % chaque heure, puis on prélève 600 cellules chaque heure. Parmi les propositions suivantes concernant (Cₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Cₙ₊₁ = 0,15Cₙ - 600 pour tout n ≥ 0.",
-      "B) Cₙ₊₁ = 1,15Cₙ - 600 pour tout n ≥ 0.",
-      "C) Cₙ = 8 000 × 1,15ⁿ + 4 000 pour tout n ≥ 0.",
-      "D) Cₙ = 4 000 × 0,15ⁿ + 8 000 pour tout n ≥ 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Cₙ₊₁ = 0,15Cₙ - 600 pour tout n ≥ 0.",
+
+      "Cₙ₊₁ = 1,15Cₙ - 600 pour tout n ≥ 0.",
+
+      "Cₙ = 8 000 × 1,15ⁿ + 4 000 pour tout n ≥ 0.",
+
+      "Cₙ = 4 000 × 0,15ⁿ + 8 000 pour tout n ≥ 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "code": "suite-20",
+
     "hint": "La constante d’équilibre vérifie C = 1,15C - 600.",
+
     "explanation": "La récurrence est Cₙ₊₁ = 1,15Cₙ - 600. La constante d’équilibre vaut 4 000. Ainsi, Cₙ − 4 000 = 8 000 × 1,15ⁿ, donc Cₙ = 8 000 × 1,15ⁿ + 4 000."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population de bactéries compte 5 000 individus à l’heure 0. Elle augmente de 20 % chaque heure, puis on prélève 500 individus chaque heure. Parmi les propositions suivantes concernant (Bₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Bₙ₊₁ = 1,2Bₙ - 500 pour tout n ≥ 0.",
-      "B) Bₙ₊₁ = 0,2Bₙ - 500 pour tout n ≥ 0.",
-      "C) Bₙ = 2 500 × 1,2ⁿ + 2 500 pour tout n ≥ 0.",
-      "D) Bₙ = 3 000 × 0,2ⁿ + 2 000 pour tout n ≥ 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Bₙ₊₁ = 1,2Bₙ - 500 pour tout n ≥ 0.",
+
+      "Bₙ₊₁ = 0,2Bₙ - 500 pour tout n ≥ 0.",
+
+      "Bₙ = 2 500 × 1,2ⁿ + 2 500 pour tout n ≥ 0.",
+
+      "Bₙ = 3 000 × 0,2ⁿ + 2 000 pour tout n ≥ 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "code": "suite-21",
+
     "hint": "La constante d’équilibre vérifie C = 1,2C - 500.",
+
     "explanation": "La récurrence est Bₙ₊₁ = 1,2Bₙ - 500. La constante d’équilibre vaut 2 500. La suite Bₙ − 2 500 est géométrique de raison 1,2 et de premier terme 2 500. Donc Bₙ = 2 500 × 1,2ⁿ + 2 500."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population compte 1 000 individus à l’année 0. Elle augmente naturellement de 5 % chaque année, mais 200 individus émigrent chaque année. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) Pₙ₊₁ = 0,05Pₙ - 200 et Pₙ = -800 × 0,05ⁿ + 1 800.",
-      "B) Pₙ₊₁ = 0,05Pₙ + 200 et Pₙ = 800 × 0,05ⁿ + 200.",
-      "C) Pₙ₊₁ = 1,05Pₙ + 200 et Pₙ = 500 × 1,05ⁿ + 500.",
-      "D) Pₙ₊₁ = 1,05Pₙ - 200 et Pₙ = -3 000 × 1,05ⁿ + 4 000.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Pₙ₊₁ = 0,05Pₙ - 200 et Pₙ = -800 × 0,05ⁿ + 1 800.",
+
+      "Pₙ₊₁ = 0,05Pₙ + 200 et Pₙ = 800 × 0,05ⁿ + 200.",
+
+      "Pₙ₊₁ = 1,05Pₙ + 200 et Pₙ = 500 × 1,05ⁿ + 500.",
+
+      "Pₙ₊₁ = 1,05Pₙ - 200 et Pₙ = -3 000 × 1,05ⁿ + 4 000.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "code": "suite-22",
+
     "hint": "Une hausse de 5 % donne le coefficient 1,05 ; l’émigration est une soustraction.",
+
     "explanation": "Pₙ₊₁ = 1,05Pₙ - 200. La constante d’équilibre vaut 4 000. La suite Pₙ − 4 000 est géométrique de raison 1,05 et de premier terme -3 000. Donc Pₙ = -3 000 × 1,05ⁿ + 4 000."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population de bactéries compte 5 000 individus à l’heure 0. Elle augmente de 30 % chaque heure, puis on prélève 600 individus chaque heure. Parmi les propositions suivantes concernant (Bₙ), laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Bₙ₊₁ = 1,3Bₙ - 600 pour tout n ≥ 0.",
-      "B) Bₙ₊₁ = 0,3Bₙ - 600 pour tout n ≥ 0.",
-      "C) Bₙ = 3 000 × 1,3ⁿ + 2 000 pour tout n ≥ 0.",
-      "D) Bₙ = 2 000 × 0,3ⁿ + 3 000 pour tout n ≥ 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Bₙ₊₁ = 1,3Bₙ - 600 pour tout n ≥ 0.",
+
+      "Bₙ₊₁ = 0,3Bₙ - 600 pour tout n ≥ 0.",
+
+      "Bₙ = 3 000 × 1,3ⁿ + 2 000 pour tout n ≥ 0.",
+
+      "Bₙ = 2 000 × 0,3ⁿ + 3 000 pour tout n ≥ 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "code": "suite-23",
+
     "hint": "La constante d’équilibre vérifie C = 1,3C - 600.",
+
     "explanation": "La récurrence est Bₙ₊₁ = 1,3Bₙ - 600. La constante d’équilibre vaut 2 000. Bₙ − 2 000 est géométrique de raison 1,3 et de premier terme 3 000. Donc Bₙ = 3 000 × 1,3ⁿ + 2 000."
+
   },
+
   {
+
     "subject": "Suites récurrentes",
+
     "level": 1,
+
     "text": "Une population de bactéries compte 3 000 individus à l’heure 0. Elle augmente de 50 % chaque heure, puis on prélève 1 000 individus chaque heure. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Bₙ₊₁ = 0,5Bₙ - 1 000 pour tout n ≥ 0.",
-      "B) Bₙ₊₁ = 1,5Bₙ - 1 000 pour tout n ≥ 0.",
-      "C) Bₙ = 2 000 × 0,5ⁿ + 1 000 pour tout n ≥ 0.",
-      "D) Bₙ = 1 000 × 1,5ⁿ + 2 000 pour tout n ≥ 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Bₙ₊₁ = 0,5Bₙ - 1 000 pour tout n ≥ 0.",
+
+      "Bₙ₊₁ = 1,5Bₙ - 1 000 pour tout n ≥ 0.",
+
+      "Bₙ = 2 000 × 0,5ⁿ + 1 000 pour tout n ≥ 0.",
+
+      "Bₙ = 1 000 × 1,5ⁿ + 2 000 pour tout n ≥ 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "suite-24",
+
     "hint": "La constante d’équilibre vérifie C = 1,5C - 1 000.",
+
     "explanation": "La récurrence est Bₙ₊₁ = 1,5Bₙ - 1 000. La constante d’équilibre vaut 2 000. Bₙ − 2 000 est géométrique de raison 1,5 et de premier terme 1 000. Donc Bₙ = 1 000 × 1,5ⁿ + 2 000."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f définie pour x > 0 par f(x) = (x + 2)/(2x + 1) + e^(-x) - ln(x)/x. Parmi les propositions suivantes concernant f et sa dérivée f', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = 0.",
-      "B) lim(x→+∞) f(x) = 1/2.",
-      "C) f'(x) = -3/(2x + 1)² - e^(-x) + (ln(x) - 1)/x².",
-      "D) f'(x) = -1/(2x + 1)² + e^(-1) - 1/x².",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "lim(x→+∞) f(x) = 1/2.",
+
+      "f'(x) = -3/(2x + 1)² - e^(-x) + (ln(x) - 1)/x².",
+
+      "f'(x) = -1/(2x + 1)² + e^(-1) - 1/x².",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "C"
+
     ],
+
     "code": "fonctions-1",
+
     "hint": "Calcule séparément les limites des trois termes, puis dérive chaque terme avec la formule du quotient.",
+
     "explanation": "À l’infini, (x + 2)/(2x + 1) tend vers 1/2, tandis que e^(-x) et ln(x)/x tendent vers 0. Pour la dérivée, la dérivée du premier quotient vaut -3/(2x + 1)² et celle de -ln(x)/x vaut (ln(x) - 1)/x²."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f définie pour x > 0 par f(x) = x² ln(x) - e^(2x) + sin(x)/x². Parmi les propositions suivantes concernant f et sa dérivée f', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = +∞.",
-      "B) lim(x→+∞) f(x) = -∞.",
-      "C) f'(x) = 2 - e^(2x) + cos(x)/(2x).",
-      "D) f'(x) = 2x ln(x) + x - 2e^(2x) + (x cos(x) - 2 sin(x))/x³.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = -∞.",
+
+      "f'(x) = 2 - e^(2x) + cos(x)/(2x).",
+
+      "f'(x) = 2x ln(x) + x - 2e^(2x) + (x cos(x) - 2 sin(x))/x³.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "fonctions-2",
+
     "hint": "À l’infini, compare la croissance de l’exponentielle à celle de x² ln(x). Pour sin(x)/x², utilise la dérivée d’un quotient.",
+
     "explanation": "L’exponentielle e^(2x) domine x² ln(x), donc f(x) tend vers -∞. La dérivée de x² ln(x) est 2x ln(x) + x ; celle de -e^(2x) est -2e^(2x). Enfin, la dérivée de sin(x)/x² est cos(x)/x² - 2sin(x)/x³. La proposition D telle qu’extraite du PDF semble présenter un dénominateur erroné : l’expression correcte est cos(x)/x² - 2sin(x)/x³."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = ln(x² + 1) - √x + e^(-x) + sin(x)/x³. On calcule sa limite en +∞. Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = -∞.",
-      "B) lim(x→+∞) f(x) = 0.",
-      "C) lim(x→+∞) f(x) = +∞.",
-      "D) lim(x→+∞) f(x) = 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = -∞.",
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-3",
+
     "hint": "Compare la croissance de √x à celle de ln(x² + 1) et borne le terme contenant sin(x).",
+
     "explanation": "Le terme ln(x² + 1) croît moins vite que √x. De plus, e^(-x) tend vers 0 et sin(x)/x³ tend vers 0 puisque sin(x) est borné. Le terme -√x domine, donc la limite vaut -∞."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = e^(2x) - ln(x) + cos(x)/√x et on calcule sa limite en +∞. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = -∞.",
-      "B) lim(x→+∞) f(x) = 0.",
-      "C) lim(x→+∞) f(x) = +∞.",
-      "D) lim(x→+∞) f(x) = 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = -∞.",
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "code": "fonctions-4",
+
     "hint": "Le cosinus est borné et cos(x)/√x tend vers 0. Compare ensuite e^(2x) et ln(x).",
+
     "explanation": "e^(2x) tend vers +∞ et domine ln(x). Le terme cos(x)/√x tend vers 0 car le cosinus est borné. La limite de f est donc +∞."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = ln(x² + 1) - 2x. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) lim(x→+∞) g(x) = -∞.",
-      "C) g'(x) = 2x/(x² + 1) - 2 ln(2).",
-      "D) g'(x) = 1/(x² + 1) - x²x - 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "g'(x) = 2x/(x² + 1) - 2 ln(2).",
+
+      "g'(x) = 1/(x² + 1) - x²x - 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-5",
+
     "hint": "La fonction linéaire 2x croît plus vite que le logarithme. Dérive ln(u) avec u'/u.",
+
     "explanation": "La limite est -∞, car -2x domine ln(x² + 1). La dérivée correcte est g'(x) = 2x/(x² + 1) - 2. La proposition C, telle qu’elle apparaît dans le PDF, contient -2 ln(2) au lieu de -2 ; elle est donc fausse."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = e^(2x)/x - ln(2x), pour x > 0. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = -∞.",
-      "B) lim(x→+∞) g(x) = +∞.",
-      "C) g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
-      "D) g'(x) = (2xe^(2x) - e^(2x))/x² - 1/x.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
+
+      "g'(x) = (2xe^(2x) - e^(2x))/x² - 1/x.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "fonctions-6",
+
     "hint": "L’exponentielle divisée par x domine le logarithme. Pour la dérivée, dérive séparément chaque terme.",
+
     "explanation": "e^(2x)/x tend vers +∞ et domine ln(2x), donc g tend vers +∞. La dérivée du premier terme est (2xe^(2x) - e^(2x))/x² et celle de -ln(2x) est -1/x. La proposition D est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la suite définie pour n ≥ 0 par uₙ = (sin(2n) + 3ⁿ)/((-1)ⁿ + 2√n). On calcule sa limite en +∞. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) lim(n→+∞) uₙ = +∞.",
-      "B) lim(n→+∞) uₙ = 1/2.",
-      "C) lim(n→+∞) uₙ = 3/2.",
-      "D) lim(n→+∞) uₙ = 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(n→+∞) uₙ = +∞.",
+
+      "lim(n→+∞) uₙ = 1/2.",
+
+      "lim(n→+∞) uₙ = 3/2.",
+
+      "lim(n→+∞) uₙ = 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-7",
+
     "hint": "Le sinus et (-1)ⁿ sont bornés ; compare 3ⁿ à √n.",
+
     "explanation": "Le numérateur est dominé par 3ⁿ et le dénominateur croît comme 2√n. L’exponentielle domine la racine, donc le quotient tend vers +∞. Attention : la ligne « Réponses : B » du corrigé source contredit son propre item A marqué VRAI ; la bonne réponse mathématique est A."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = 1/(2x) - (ln(x))¹⁰⁰ + sin²(x)/√x et on calcule sa limite en +∞. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = -∞.",
-      "B) lim(x→+∞) f(x) = 0.",
-      "C) lim(x→+∞) f(x) = +∞.",
-      "D) lim(x→+∞) f(x) = 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = -∞.",
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-8",
+
     "hint": "Le terme sin²(x) est borné entre 0 et 1. Compare les autres termes.",
+
     "explanation": "1/(2x) tend vers 0 et sin²(x)/√x tend vers 0 car sin²(x) est borné. En revanche, (ln(x))¹⁰⁰ tend vers +∞ et apparaît avec un signe négatif. La limite est donc -∞."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = sin(√x) + ln(2x) - 1/x² pour x > 0. Parmi les propositions suivantes concernant g', laquelle est exacte ?",
+
     "choices": [
-      "A) g'(x) = cos(√x)/(2√x) + 1/(2x) + 2/x³.",
-      "B) g'(x) = cos(√x)/√x + 1/x - 2/x³.",
-      "C) g'(x) = -cos(√x)/(2√x) + 1/(2x) + 3/x³.",
-      "D) g'(x) = cos(√x)/(2√x) + 1/x + 2/x³.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = cos(√x)/(2√x) + 1/(2x) + 2/x³.",
+
+      "g'(x) = cos(√x)/√x + 1/x - 2/x³.",
+
+      "g'(x) = -cos(√x)/(2√x) + 1/(2x) + 3/x³.",
+
+      "g'(x) = cos(√x)/(2√x) + 1/x + 2/x³.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "code": "fonctions-9",
+
     "hint": "Utilise la dérivée de sin(u), celle de ln(2x) et celle de -x⁻².",
+
     "explanation": "La dérivée de sin(√x) est cos(√x)/(2√x), celle de ln(2x) est 1/x, et celle de -1/x² est 2/x³. La somme donne la proposition D."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la fonction f définie par f(x) = xe^(-x). Parmi les propositions suivantes concernant f et sa tangente au point d’abscisse x = 1, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Le domaine de définition de f est ℝ.",
-      "B) Une équation de la tangente T est y = -x - 1.",
-      "C) Une équation de la tangente T est y = x + 1.",
-      "D) f'(x) = e^(-x)(1 - x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le domaine de définition de f est ℝ.",
+
+      "Une équation de la tangente T est y = -x - 1.",
+
+      "Une équation de la tangente T est y = x + 1.",
+
+      "f'(x) = e^(-x)(1 - x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "fonctions-18",
+
     "hint": "Dérive le produit xe^(-x), puis calcule f(1) et f'(1).",
+
     "explanation": "La fonction est définie sur ℝ. Sa dérivée est f'(x) = e^(-x)(1 - x). En x = 1, f'(1) = 0 et f(1) = 1/e : la tangente est horizontale, d’équation y = 1/e. La correction source indique A et D, mais il faut aussi tenir compte de la tangente si une proposition correspond à y = 1/e."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la fonction g définie par g(x) = ln(x² + 1) - 2x. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) lim(x→+∞) g(x) = -∞.",
-      "C) g'(x) = 2x/(x² + 1) - 2x ln(2).",
-      "D) g'(x) = 1/(x² + 1) - x²x - 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "g'(x) = 2x/(x² + 1) - 2x ln(2).",
+
+      "g'(x) = 1/(x² + 1) - x²x - 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-19",
+
     "hint": "Compare les croissances du logarithme et de la fonction linéaire, puis applique la dérivée de ln(u).",
+
     "explanation": "La limite est -∞ puisque 2x domine ln(x² + 1). Attention : la correction du PDF indique C comme vraie, mais la dérivée mathématique correcte est g'(x) = 2x/(x² + 1) - 2. L’item C reproduit la formule du document et contient une erreur."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la fonction u(x) = sin(√(x² + 1)). Parmi les propositions suivantes concernant u', laquelle est exacte ?",
+
     "choices": [
-      "A) u'(x) = x cos(√(x² + 1))/(2√(x² + 1)).",
-      "B) u'(x) = x cos(√(x² + 1))/√(2x).",
-      "C) u'(x) = x cos(√(x² + 1))/√(x² + 1).",
-      "D) u'(x) = cos(√(x² + 1))/(2√(x² + 1)).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u'(x) = x cos(√(x² + 1))/(2√(x² + 1)).",
+
+      "u'(x) = x cos(√(x² + 1))/√(2x).",
+
+      "u'(x) = x cos(√(x² + 1))/√(x² + 1).",
+
+      "u'(x) = cos(√(x² + 1))/(2√(x² + 1)).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "code": "fonctions-20",
+
     "hint": "Utilise la dérivée d’une fonction composée deux fois : d’abord la racine, puis le sinus.",
+
     "explanation": "La dérivée de √(x² + 1) est x/√(x² + 1). Donc u'(x) = x cos(√(x² + 1))/√(x² + 1)."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la fonction f définie par f(x) = x ln(x) - 2x. On étudie sa tangente au point d’abscisse x = 1. Parmi les propositions suivantes, laquelle est exacte ?",
+
     "choices": [
-      "A) Le domaine de définition de f est ℝ privé de 0.",
-      "B) Une équation de la tangente est y = -x - 1.",
-      "C) Une équation de la tangente est y = x + 1.",
-      "D) Une équation de la tangente est y = x - 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le domaine de définition de f est ℝ privé de 0.",
+
+      "Une équation de la tangente est y = -x - 1.",
+
+      "Une équation de la tangente est y = x + 1.",
+
+      "Une équation de la tangente est y = x - 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-21",
+
     "hint": "Le logarithme impose x > 0. Utilise ensuite y = f'(1)(x - 1) + f(1).",
+
     "explanation": "Le domaine est ]0 ; +∞[. On a f'(x) = ln(x) - 1, donc f'(1) = -1 et f(1) = -2. La tangente est y = -(x - 1) - 2 = -x - 1."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = ln(x² + 1) - 2x. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) lim(x→+∞) g(x) = -∞.",
-      "C) g'(x) = 2x/(x² + 1) - 2x ln(2).",
-      "D) g'(x) = 1/(x² + 1) - x²x - 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "g'(x) = 2x/(x² + 1) - 2x ln(2).",
+
+      "g'(x) = 1/(x² + 1) - x²x - 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-5-bis",
+
     "hint": "Compare la croissance du logarithme à celle de la fonction linéaire, puis vérifie la dérivée indiquée.",
+
     "explanation": "La limite est -∞. Dans le corrigé du PDF, C est indiqué vrai, mais la dérivée correcte est 2x/(x² + 1) - 2 : l’expression de C semble comporter une erreur dans le document."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la fonction g définie pour x > 0 par g(x) = e^(2x)/x - ln(2x). Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = -∞.",
-      "B) lim(x→+∞) g(x) = +∞.",
-      "C) g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
-      "D) g'(x) = (2xe^(2x) - e^(2x))/x² - 1/x.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = -∞.",
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "g'(x) = 2e^(2x)/x - e^(2x)/x² - ln(2).",
+
+      "g'(x) = (2xe^(2x) - e^(2x))/x² - 1/x.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "fonctions-6-bis",
+
     "hint": "L’exponentielle domine le logarithme. Pour la dérivée du quotient, utilise la règle du quotient.",
+
     "explanation": "La limite vaut +∞. La dérivée de e^(2x)/x est (2xe^(2x) - e^(2x))/x² et celle de -ln(2x) est -1/x. La proposition D est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère la suite (uₙ), définie pour n ≥ 0 par uₙ = (sin(2n) + 3ⁿ)/((-1)ⁿ + 2√n). On calcule sa limite en +∞.",
+
     "choices": [
-      "A) lim(n→+∞) uₙ = +∞.",
-      "B) lim(n→+∞) uₙ = 1/2.",
-      "C) lim(n→+∞) uₙ = 3/2.",
-      "D) lim(n→+∞) uₙ = 0.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(n→+∞) uₙ = +∞.",
+
+      "lim(n→+∞) uₙ = 1/2.",
+
+      "lim(n→+∞) uₙ = 3/2.",
+
+      "lim(n→+∞) uₙ = 0.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-7-bis",
+
     "hint": "Le sinus et (-1)ⁿ sont bornés ; compare 3ⁿ à √n.",
+
     "explanation": "Le numérateur est dominé par 3ⁿ et le dénominateur croît comme 2√n. La limite mathématique est +∞. Le corrigé du PDF indique pourtant B dans sa ligne de réponses, alors que son item A est marqué vrai."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = 1/(2x) - (ln(x))¹⁰⁰ + sin²(x)/√x. On calcule sa limite en +∞.",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = -∞.",
-      "B) lim(x→+∞) f(x) = 0.",
-      "C) lim(x→+∞) f(x) = +∞.",
-      "D) lim(x→+∞) f(x) = 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = -∞.",
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-8-bis",
+
     "hint": "Utilise 0 ≤ sin²(x) ≤ 1, puis compare les termes contenant ln(x).",
+
     "explanation": "Le premier terme tend vers 0 et sin²(x)/√x tend vers 0. Le terme -(ln(x))¹⁰⁰ tend vers -∞. La limite correcte est donc -∞ ; l’item A devrait être vrai. Le corrigé source indique C, ce qui est incohérent."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = sin(√x) + ln(2x) - 1/x², pour x > 0. On calcule g'(x).",
+
     "choices": [
-      "A) g'(x) = cos(√x)/(2√x) + 1/(2x) + 2/x³.",
-      "B) g'(x) = cos(√x)/√x + 1/x - 2/x³.",
-      "C) g'(x) = -cos(√x)/(2√x) + 1/(2x) + 3/x³.",
-      "D) g'(x) = cos(√x)/(2√x) + 1/x + 2/x³.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = cos(√x)/(2√x) + 1/(2x) + 2/x³.",
+
+      "g'(x) = cos(√x)/√x + 1/x - 2/x³.",
+
+      "g'(x) = -cos(√x)/(2√x) + 1/(2x) + 3/x³.",
+
+      "g'(x) = cos(√x)/(2√x) + 1/x + 2/x³.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "code": "fonctions-9-bis",
+
     "hint": "Dérive séparément sin(√x), ln(2x) et -x⁻².",
+
     "explanation": "Les dérivées sont respectivement cos(√x)/(2√x), 1/x et 2/x³. La proposition D est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = cos(x²) + ln(√x) + 1/x³, pour x > 0. On calcule g'(x).",
+
     "choices": [
-      "A) g'(x) = sin(x²) + 1/(2x) + 1/(3x²).",
-      "B) g'(x) = -sin(2x) + 1/√x + 3/x².",
-      "C) g'(x) = -2x sin(x²) + 1/(2x) - 3/x⁴.",
-      "D) g'(x) = sin(x²) + 1/√x - 4/x⁴.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = sin(x²) + 1/(2x) + 1/(3x²).",
+
+      "g'(x) = -sin(2x) + 1/√x + 3/x².",
+
+      "g'(x) = -2x sin(x²) + 1/(2x) - 3/x⁴.",
+
+      "g'(x) = sin(x²) + 1/√x - 4/x⁴.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "C"
+
     ],
+
     "code": "fonctions-10",
+
     "hint": "Utilise la dérivée de cos(u) avec u = x², puis dérive ln(√x) et x⁻³.",
+
     "explanation": "Les dérivées sont -2x sin(x²), 1/(2x) et -3/x⁴. La proposition C est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = cos(2x)/(x + 1) - x² + e^(3x). Parmi les propositions suivantes concernant f et f', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) f(x) = +∞.",
-      "B) lim(x→+∞) f(x) = 0.",
-      "C) f'(x) = (-(x + 1)sin(2x) - cos(2x))/(x + 1)² - 2x + e^(3x).",
-      "D) f'(x) = (-2(x + 1)sin(2x) - cos(2x))/(x + 1)² - 2x + 3e^(3x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) f(x) = +∞.",
+
+      "lim(x→+∞) f(x) = 0.",
+
+      "f'(x) = (-(x + 1)sin(2x) - cos(2x))/(x + 1)² - 2x + e^(3x).",
+
+      "f'(x) = (-2(x + 1)sin(2x) - cos(2x))/(x + 1)² - 2x + 3e^(3x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "fonctions-11",
+
     "hint": "L’exponentielle domine le terme polynomial ; pour le quotient, dérive cos(2x) avec la règle de la chaîne.",
+
     "explanation": "La limite vaut +∞. La dérivée de cos(2x) est -2sin(2x) et celle de e^(3x) est 3e^(3x). La proposition D correspond au résultat attendu dans le corrigé."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = 1/(x√x) + ln(1 + x²), pour x > 0. On calcule g'(x).",
+
     "choices": [
-      "A) g'(x) = -(3/2)√x/x³ + 1/(x² + 1).",
-      "B) g'(x) = -3/(2x²√x) + 2x/(x² + 1).",
-      "C) g'(x) = 1/x³ + 1/(x² + 1).",
-      "D) g'(x) = -(3/2)√x/x³ + 2x/(x² + 1).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = -(3/2)√x/x³ + 1/(x² + 1).",
+
+      "g'(x) = -3/(2x²√x) + 2x/(x² + 1).",
+
+      "g'(x) = 1/x³ + 1/(x² + 1).",
+
+      "g'(x) = -(3/2)√x/x³ + 2x/(x² + 1).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B",
+
       "D"
+
     ],
+
     "code": "fonctions-12",
+
     "hint": "Réécris 1/(x√x) comme x^(-3/2), puis dérive ln(1 + x²).",
+
     "explanation": "La dérivée du premier terme vaut -(3/2)x^(-5/2), soit -3/(2x²√x) et aussi -(3/2)√x/x³. La dérivée du logarithme est 2x/(x² + 1). Les propositions B et D sont équivalentes."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = 3x² + x/(x² + 1) + sin(2x + 1) + e^(√x). On calcule g'(x).",
+
     "choices": [
-      "A) g'(x) = 6x + (1 - x²)/(x² + 1)² + cos(2x + 1) + e^(√x)/√x.",
-      "B) g'(x) = 6x + (1 - x²)/(x² + 1)² + 2cos(2x + 1) + e^(√x)/(2√x).",
-      "C) g'(x) = 6x + (1 - x²)/(x² + 1)² + 2cos(2x + 1) + e^(1/(2√x)).",
-      "D) g'(x) = 6x + (1 - x²)/(x² + 1)² + cos(2x + 1) + √x e^(√x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = 6x + (1 - x²)/(x² + 1)² + cos(2x + 1) + e^(√x)/√x.",
+
+      "g'(x) = 6x + (1 - x²)/(x² + 1)² + 2cos(2x + 1) + e^(√x)/(2√x).",
+
+      "g'(x) = 6x + (1 - x²)/(x² + 1)² + 2cos(2x + 1) + e^(1/(2√x)).",
+
+      "g'(x) = 6x + (1 - x²)/(x² + 1)² + cos(2x + 1) + √x e^(√x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-13",
+
     "hint": "Attention aux dérivées de sin(2x + 1) et e^(√x).",
+
     "explanation": "La dérivée du quotient est (1 - x²)/(x² + 1)². Celle de sin(2x + 1) est 2cos(2x + 1), et celle de e^(√x) est e^(√x)/(2√x)."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = 5x⁴ + cos(3x) + 1/√x. On calcule g'(x).",
+
     "choices": [
-      "A) g'(x) = 5x³ + 3sin(3x) + 1/(x√x).",
-      "B) g'(x) = 20x³ - 3sin(3x) + 2/(x√x).",
-      "C) g'(x) = 4x³ + 3sin(3x) - 1/(x√x).",
-      "D) g'(x) = 20x³ - 3sin(3x) - 1/(2x√x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "g'(x) = 5x³ + 3sin(3x) + 1/(x√x).",
+
+      "g'(x) = 20x³ - 3sin(3x) + 2/(x√x).",
+
+      "g'(x) = 4x³ + 3sin(3x) - 1/(x√x).",
+
+      "g'(x) = 20x³ - 3sin(3x) - 1/(2x√x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "D"
+
     ],
+
     "code": "fonctions-14",
+
     "hint": "Réécris 1/√x sous forme x^(-1/2).",
+
     "explanation": "Les dérivées sont 20x³, -3sin(3x) et -(1/2)x^(-3/2) = -1/(2x√x). La proposition D est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère f(x) = x ln(x) - 2x, définie pour x > 0. On s’intéresse à la tangente T à la courbe au point x = 1. Quelle(s) proposition(s) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) Le domaine de définition de f est ℝ privé de 0.",
-      "B) Une équation de la tangente T est y = -x - 1.",
-      "C) Une équation de la tangente T est y = x + 1.",
-      "D) Une équation de la tangente T est y = x - 1.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "Le domaine de définition de f est ℝ privé de 0.",
+
+      "Une équation de la tangente T est y = -x - 1.",
+
+      "Une équation de la tangente T est y = x + 1.",
+
+      "Une équation de la tangente T est y = x - 1.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "B"
+
     ],
+
     "code": "fonctions-21-bis",
+
     "hint": "Calcule f(1), puis f'(1), avant d’appliquer y = f'(1)(x - 1) + f(1).",
+
     "explanation": "Le domaine est ]0 ; +∞[. On a f'(x) = ln(x) - 1, donc f'(1) = -1 et f(1) = -2. La tangente est y = -(x - 1) - 2 = -x - 1."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = 3x³ + sin(x²) - 1/√x. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) La fonction g n’admet pas de limite en +∞.",
-      "C) g'(x) = 9x² + 2x cos(x²) + 1/(2x√x).",
-      "D) g'(x) = 9x² + x cos(x²) - 1/(x√x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "La fonction g n’admet pas de limite en +∞.",
+
+      "g'(x) = 9x² + 2x cos(x²) + 1/(2x√x).",
+
+      "g'(x) = 9x² + x cos(x²) - 1/(x√x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "C"
+
     ],
+
     "code": "fonctions-22",
+
     "hint": "Le terme polynomial domine les termes bornés ou tendant vers zéro. Pour la dérivée, écris 1/√x sous la forme x^(-1/2).",
+
     "explanation": "La limite est +∞, car 3x³ domine les autres termes. De plus, g'(x) = 9x² + 2x cos(x²) + 1/(2x√x). Les réponses A et C sont correctes."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère u(x) = x e^(x²) + 3ˣ. On calcule u'(x). Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) u'(x) = e^(x²)(1 + 2x²) + ln(3)·3ˣ.",
-      "B) u'(x) = e^(x²)(1 + 2x) + 3ˣ.",
-      "C) u'(x) = e^(2x) + x·3ˣ.",
-      "D) u'(x) = (2x² + 1)e^(2x) + 3ˣ⁻¹.",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "u'(x) = e^(x²)(1 + 2x²) + ln(3)·3ˣ.",
+
+      "u'(x) = e^(x²)(1 + 2x) + 3ˣ.",
+
+      "u'(x) = e^(2x) + x·3ˣ.",
+
+      "u'(x) = (2x² + 1)e^(2x) + 3ˣ⁻¹.",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A"
+
     ],
+
     "code": "fonctions-23",
+
     "hint": "Applique la dérivée d’un produit à x e^(x²), puis la formule (aˣ)' = ln(a)·aˣ.",
+
     "explanation": "La dérivée de x e^(x²) est e^(x²) + 2x²e^(x²) = (1 + 2x²)e^(x²). Celle de 3ˣ est ln(3)·3ˣ. La proposition A est correcte."
+
   },
+
   {
+
     "subject": "Fonctions et limites, dérivation et fonctions usuelles",
+
     "level": 2,
+
     "text": "On considère g(x) = cos(x²) + (x + 1)/√x. Parmi les propositions suivantes concernant g et sa dérivée g', laquelle (lesquelles) est (sont) exacte(s) ?",
+
     "choices": [
-      "A) lim(x→+∞) g(x) = +∞.",
-      "B) lim(x→+∞) g(x) = 0.",
-      "C) g'(x) = -2 sin(x²) + (2x - 1)/(2x√x).",
-      "D) g'(x) = -2x sin(x²) + (x - 1)/(2x√x).",
-      "E) Aucune des propositions ci-dessus n’est exacte."
+
+      "lim(x→+∞) g(x) = +∞.",
+
+      "lim(x→+∞) g(x) = 0.",
+
+      "g'(x) = -2 sin(x²) + (2x - 1)/(2x√x).",
+
+      "g'(x) = -2x sin(x²) + (x - 1)/(2x√x).",
+
+      "Aucune des propositions ci-dessus n’est exacte."
+
     ],
+
     "answer": [
+
       "A",
+
       "D"
+
     ],
+
     "code": "fonctions-24",
+
     "hint": "Réécris (x + 1)/√x comme √x + 1/√x avant d’étudier la limite et de dériver.",
+
     "explanation": "La limite est +∞, car √x tend vers +∞ tandis que cos(x²) reste borné. La dérivée correcte est -2x sin(x²) + (x - 1)/(2x√x). Les réponses A et D sont correctes."
+
   }
 ];
 const CHEMISTRY_TOPICS_BY_LEVEL = {
