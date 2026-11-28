@@ -4746,7 +4746,7 @@ function buildBossScenario() {
                 description: "Saisis le code obtenu sur l'interface digitale, puis réussis 3 QCM d'initialisation pour obtenir le 1er code chiffré destiné au terminal central.",
                 type: "question",
                 requiredCode: "SAS",
-                requiredCorrectAnswers: 3,
+                requiredCorrectAnswers: 2,
                 rewardCode: "UN"
             },
 
@@ -4879,7 +4879,7 @@ function buildBossScenario() {
                 description: "Entre le code délivré par l'appareil de lancement, puis réussis 6 QCM différents pour obtenir le 3e code du coffre central.",
                 type: "question",
                 requiredCode: "INJECTEUR",
-                requiredCorrectAnswers: 6,
+                requiredCorrectAnswers: 3,
                 rewardCode: "TOR"
             },
 
@@ -5011,7 +5011,7 @@ function buildBossScenario() {
                 description: "Utilise le numero caché sous la poussière puis les 3 lettres codées pour pouvoir activer le lecteur de QCMs",
                 type: "question",
                 requiredCode: "2ATP",
-                requiredCorrectAnswers: 7,
+                requiredCorrectAnswers: 4,
                 rewardCode: "FINALISE"
             },
 

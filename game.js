@@ -3329,21 +3329,21 @@ function openFinalDoor(object) {
         const completed =
             state.objectCorrectQuestions[objectiveId]?.length || 0;
 
-        if (completed < 7) {
+        if (completed < 4) {
             showModal("🔒 Porte ultime verrouillée", `
-                <p>Tu dois réussir 7 QCM dans l'Épreuve ultime.</p>
+                <p>Tu dois réussir 4 QCM dans l'Épreuve ultime.</p>
 
                 <p>📊 Progression :
-                    <strong>${completed}/7 QCM réussis</strong>
+                    <strong>${completed}/4 QCM réussis</strong>
                 </p>
 
                 <progress
                     value="${completed}"
-                    max="7"
+                    max="4"
                     style="width:100%; height:18px;"
                 ></progress>
 
-                <p>Encore ${7 - completed} QCM à réussir.</p>
+                <p>Encore ${4 - completed} QCM à réussir.</p>
 
                 <button class="button" onclick="closeModal()">
                     Continuer
@@ -3567,10 +3567,10 @@ function getProgressHintForCurrentRoom() {
 
         if (roomKey === "analysis") {
             const finalQcmCount = state.objectCorrectQuestions?.["analysis:finalQuestion"]?.length || 0;
-            if (finalQcmCount < 7) {
-                return `Résous les modules de la salle (direction avec la légende de la salle 2, molécule, thermochimie, tubes 235 + labyrinthe) et valide les 7 QCM du lecteur final (${finalQcmCount}/7 réussis).`;
+            if (finalQcmCount < 4) {
+                return `Résous les modules de la salle (direction avec la légende de la salle 2, molécule, thermochimie, tubes 235 + labyrinthe) et valide les 4 QCM du lecteur final (${finalQcmCount}/4 réussis).`;
             }
-            return "Les 7 QCM sont validés : utilise le badge et le code final sur le sas de sortie.";
+            return "Les 4 QCM sont validés : utilise le badge et le code final sur le sas de sortie.";
         }
     }
 
